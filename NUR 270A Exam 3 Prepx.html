@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NUR 270A Exam 3 Prep</title>
+  <meta name="description" content="Practice questions for NUR 270A Exam 3: newborn and high-risk newborn, postpartum and complications, mother and newborn meds, contraception, and medication math.">
+  <style>
+:root {
+  --ink: #16263a;
+  --muted: #5a6b7d;
+  --paper: #f5f9f9;
+  --card: #ffffff;
+  --line: #cfe0e0;
+  --teal: #0e6b6b;
+  --teal-deep: #0a4f4f;
+  --teal-soft: #dcefef;
+  --right: #2b7a4b;
+  --right-soft: #e1f2e8;
+  --wrong: #b3412a;
+  --wrong-soft: #f8e4de;
+  --amber: #b7791f;
+  --focus: #1d4ed8;
+  --serif: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #e6eef3;
+    --muted: #9db0bf;
+    --paper: #0f1a24;
+    --card: #162433;
+    --line: #28404f;
+    --teal: #4fc3c3;
+    --teal-deep: #7bd9d9;
+    --teal-soft: #17353d;
+    --right: #66c48a;
+    --right-soft: #17332560;
+    --wrong: #f08c75;
+    --wrong-soft: #3b2420;
+    --amber: #e5b25d;
+    --focus: #8fb4ff;
+  }
+}
+
+* { box-sizing: border-box; }
+html { font-size: 17px; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  line-height: 1.5;
+}
+
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+button { font: inherit; color: inherit; }
+
+.wrap { max-width: 860px; margin: 0 auto; padding: 0 1.25rem; }
+
+/* ----- header ----- */
+.top { border-bottom: 1px solid var(--line); background: var(--card); }
+.top .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-top: 1rem; padding-bottom: 1rem; }
+.brand { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; margin: 0; }
+.brand small { font-family: var(--sans); font-weight: 400; color: var(--muted); font-size: 0.85rem; margin-left: 0.5rem; }
+.linkbtn { background: none; border: 0; color: var(--teal); text-decoration: underline; cursor: pointer; padding: 0.25rem; }
+
+main { padding: 1.75rem 0 4rem; }
+h2 { font-family: var(--serif); font-size: 1.5rem; margin: 0 0 0.35rem; }
+h3 { font-family: var(--serif); font-size: 1.1rem; margin: 1.5rem 0 0.5rem; }
+.lede { color: var(--muted); margin: 0 0 1.5rem; max-width: 60ch; }
+
+/* ----- panels ----- */
+.panel { background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 1.25rem; margin-bottom: 1.25rem; }
+.panel > h3:first-child { margin-top: 0; }
+
+.modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+.mode { position: relative; display: block; border: 1.5px solid var(--line); border-radius: 8px; padding: 0.85rem 1rem; cursor: pointer; background: var(--card); }
+.mode input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.mode strong { display: block; font-family: var(--serif); font-size: 1.05rem; }
+.mode span { color: var(--muted); font-size: 0.88rem; }
+.mode:has(input:checked) { border-color: var(--teal); background: var(--teal-soft); }
+.mode:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+
+fieldset { border: 0; padding: 0; margin: 0; }
+legend { font-family: var(--serif); font-weight: 700; margin-bottom: 0.4rem; padding: 0; }
+.chapter { margin: 0 0 0.9rem; }
+.chapter-head { display: flex; align-items: center; gap: 0.5rem; font-weight: 600; margin-bottom: 0.3rem; }
+.topics { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.chip { position: relative; display: inline-flex; align-items: center; gap: 0.35rem; border: 1px solid var(--line); border-radius: 999px; padding: 0.3rem 0.8rem; font-size: 0.9rem; cursor: pointer; background: var(--card); }
+.chip input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.chip:has(input:checked) { background: var(--teal); color: #fff; border-color: var(--teal); }
+@media (prefers-color-scheme: dark) { .chip:has(input:checked) { color: #0b1620; } }
+.chip:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+.chip em { font-style: normal; opacity: 0.75; font-size: 0.8rem; }
+
+.row { display: flex; flex-wrap: wrap; gap: 1rem 1.5rem; align-items: center; margin-top: 1rem; }
+select { font: inherit; padding: 0.35rem 0.5rem; border: 1px solid var(--line); border-radius: 6px; background: var(--card); color: var(--ink); }
+.check { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+.btn { background: var(--teal); color: #fff; border: 0; border-radius: 8px; padding: 0.65rem 1.3rem; font-weight: 600; cursor: pointer; }
+@media (prefers-color-scheme: dark) { .btn { color: #0b1620; } }
+.btn:hover { background: var(--teal-deep); }
+@media (prefers-color-scheme: dark) { .btn:hover { color: #0b1620; } }
+.btn.ghost { background: transparent; color: var(--teal); border: 1.5px solid var(--teal); }
+.btn.ghost:hover { background: var(--teal-soft); }
+.btn[disabled] { opacity: 0.45; cursor: not-allowed; }
+.actions { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.25rem; align-items: center; }
+.spacer { flex: 1; }
+
+/* ----- progress by topic ----- */
+.bars { display: grid; gap: 0.6rem; }
+.bar-row { display: grid; grid-template-columns: minmax(150px, 1.2fr) 3fr auto; gap: 0.75rem; align-items: center; font-size: 0.92rem; }
+.bar { height: 10px; background: var(--teal-soft); border-radius: 999px; overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--teal); }
+.bar i.low { background: var(--wrong); }
+.bar i.mid { background: var(--amber); }
+.bar i.hi { background: var(--right); }
+.num { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 6.5em; text-align: right; }
+
+/* ----- rhythm strip (progress) ----- */
+.strip { display: flex; align-items: flex-end; gap: 0; margin: 0 0 1.25rem; overflow-x: auto; padding-bottom: 4px; }
+.beat { flex: 0 0 auto; width: 28px; height: 30px; padding: 0; background: none; border: 0; cursor: pointer; }
+.beat svg { display: block; width: 100%; height: 100%; }
+.beat path { fill: none; stroke: var(--line); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.beat.seen path { stroke: var(--teal); }
+.beat.right path { stroke: var(--right); }
+.beat.wrong path { stroke: var(--wrong); }
+.beat.flagged path { stroke-dasharray: 3 2; }
+.beat.current { background: var(--teal-soft); border-radius: 4px; }
+.plainbar { height: 8px; background: var(--teal-soft); border-radius: 999px; overflow: hidden; margin: 0 0 1.25rem; }
+.plainbar i { display: block; height: 100%; background: var(--teal); }
+
+/* ----- question ----- */
+.meta { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center; color: var(--muted); font-size: 0.88rem; margin-bottom: 0.6rem; }
+.tag { background: var(--teal-soft); color: var(--teal-deep); border-radius: 4px; padding: 0.1rem 0.5rem; }
+.timer { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
+.timer.low { color: var(--wrong); }
+.stem { font-family: var(--serif); font-size: 1.2rem; line-height: 1.45; margin: 0 0 1rem; max-width: 62ch; }
+.hint { color: var(--muted); font-size: 0.9rem; margin: -0.5rem 0 0.9rem; }
+.bars + .hint { margin: 1rem 0 0; }
+
+.opts { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.opt { position: relative; display: flex; gap: 0.75rem; align-items: flex-start; border: 1.5px solid var(--line); border-radius: 8px; padding: 0.7rem 0.9rem; background: var(--card); cursor: pointer; }
+.opt input { margin-top: 0.3rem; accent-color: var(--teal); }
+.opt:has(input:checked) { border-color: var(--teal); background: var(--teal-soft); }
+.opt:has(input:focus-visible) { outline: 3px solid var(--focus); outline-offset: 2px; }
+.opt.right, .opt.right:has(input:checked) { border-color: var(--right); background: var(--right-soft); }
+.opt.wrong, .opt.wrong:has(input:checked) { border-color: var(--wrong); background: var(--wrong-soft); }
+.opt.missed { border-style: dashed; border-color: var(--right); }
+.locked .opt { cursor: default; }
+.mark { margin-left: auto; font-size: 0.82rem; font-weight: 600; white-space: nowrap; }
+.right .mark { color: var(--right); }
+.wrong .mark { color: var(--wrong); }
+.missed .mark { color: var(--right); }
+
+.fill { width: 100%; max-width: 24rem; font: inherit; padding: 0.6rem 0.75rem; border: 1.5px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); }
+.fill.right { border-color: var(--right); background: var(--right-soft); }
+.fill.wrong { border-color: var(--wrong); background: var(--wrong-soft); }
+
+.seq { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.seq li { display: flex; align-items: center; gap: 0.6rem; border: 1.5px solid var(--line); border-radius: 8px; padding: 0.55rem 0.75rem; background: var(--card); }
+.seq .pos { font-weight: 700; color: var(--teal); min-width: 1.4em; }
+.seq .txt { flex: 1; }
+.seq button { border: 1px solid var(--line); background: var(--card); border-radius: 6px; width: 2rem; height: 2rem; cursor: pointer; }
+.seq button[disabled] { opacity: 0.35; cursor: not-allowed; }
+.seq li.right { border-color: var(--right); background: var(--right-soft); }
+.seq li.wrong { border-color: var(--wrong); background: var(--wrong-soft); }
+
+.feedback { margin-top: 1.1rem; border-left: 4px solid var(--teal); background: var(--teal-soft); padding: 0.8rem 1rem; border-radius: 0 8px 8px 0; }
+.feedback.right { border-color: var(--right); background: var(--right-soft); }
+.feedback.wrong { border-color: var(--wrong); background: var(--wrong-soft); }
+.feedback strong { display: block; margin-bottom: 0.25rem; }
+.feedback p { margin: 0.25rem 0 0; }
+.feedback .ref { color: var(--muted); font-size: 0.88rem; }
+
+/* ----- results ----- */
+.score { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem 1.25rem; margin-bottom: 0.5rem; }
+.score .big { font-family: var(--serif); font-size: 2.6rem; font-weight: 700; line-height: 1; }
+.review { display: grid; gap: 0.75rem; margin-top: 1rem; }
+.review details { border: 1px solid var(--line); border-radius: 8px; background: var(--card); }
+.review summary { cursor: pointer; padding: 0.7rem 0.9rem; display: flex; gap: 0.6rem; align-items: baseline; }
+.review summary .ok { color: var(--right); font-weight: 700; }
+.review summary .no { color: var(--wrong); font-weight: 700; }
+.review .body { padding: 0 0.9rem 0.9rem; }
+.review .body p { margin: 0.35rem 0; }
+.empty { color: var(--muted); }
+
+@media (max-width: 640px) {
+  html { font-size: 16px; }
+  .modes { grid-template-columns: 1fr; }
+  .bar-row { grid-template-columns: 1fr; gap: 0.2rem; }
+  .num { text-align: left; }
+  .stem { font-size: 1.12rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .bar i, .plainbar i { transition: width 0.4s ease; }
+}
+
+.ow{padding-left:18px;margin:8px 0}.ow li{margin:8px 0}.ow li.yes strong{color:var(--ok,#15803d)}
+</style>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <h1 class="brand">NUR 270A Exam 3 Prep <small>Newborn, postpartum, meds, contraception</small></h1>
+      <button type="button" class="linkbtn" id="homeLink">Setup</button>
+    </div>
+  </header>
+  <main class="wrap" id="app" tabindex="-1">
+    <p id="fallback" style="padding:16px 0">Loading the quiz. If this page stays blank, your file viewer is blocking scripts. Open this file in Safari or Chrome instead (on iPhone: Share, then Open in Safari), or use the hosted link.</p><noscript>This practice app needs JavaScript turned on. Open it in Safari or Chrome.</noscript>
+  </main>
+  <script>
+
+/* NUR 270A Exam 3 question bank, limited to the professor-emphasized topics.
+ * ATI questions keep their per-option rationales; the rest were written with one rationale per answer choice.
+ *
+ * To add a question, append a line below using one of the helpers:
+ *   mc(topicId, stem, [options], correctIndex, rationale)
+ *   sata(topicId, stem, [options], [correctIndexes], rationale)
+ *   fill(topicId, stem, [acceptedAnswers], rationale)
+ *   order(topicId, stem, [itemsInCorrectOrder], rationale)
+ * Progress is keyed to a hash of the stem, so editing a stem resets that question's history.
+ */
+(function () {
+  "use strict";
+
+  window.CHAPTERS = {
+    ek: "Exam 3 focus topics (professor emphasis)"
+  };
+
+  window.TOPICS = [
+    { id: "ek_bf", label: "Breastfeeding: latch, milk types, hormones, contraception, intake", chapter: "ek", ref: "Breastfeeding notes" },
+    { id: "ek_pp", label: "Postpartum care, complications, contraception, emotional changes", chapter: "ek", ref: "Postpartum care, complications, contraception, emotional changes notes" },
+    { id: "ek_reflex", label: "Newborn reflexes", chapter: "ek", ref: "Newborn reflexes notes" },
+    { id: "ek_apgar", label: "Apgar scoring", chapter: "ek", ref: "Apgar scoring notes" },
+    { id: "ek_resp", label: "Newborn respiratory distress and RDS", chapter: "ek", ref: "Newborn respiratory distress and RDS notes" },
+    { id: "ek_nas", label: "Neonatal abstinence syndrome", chapter: "ek", ref: "Neonatal abstinence syndrome notes" },
+    { id: "ek_assess", label: "Newborn physical assessment", chapter: "ek", ref: "Newborn physical assessment notes" },
+    { id: "ek_sleep", label: "Newborn sleep and behavior states", chapter: "ek", ref: "Newborn sleep and behavior states notes" }
+  ];
+
+  var Q = [];
+  function hash(s) {
+    var h = 5381;
+    for (var i = 0; i < s.length; i++) { h = ((h << 5) + h + s.charCodeAt(i)) | 0; }
+    return "q" + (h >>> 0).toString(36);
+  }
+  function add(type, topic, q, opts, a, why) {
+    Q.push({ id: hash(topic + q), type: type, topic: topic, q: q, opts: opts, a: a, why: why });
+  }
+  function mc(t, q, o, a, w) { add("mc", t, q, o, a, w); }
+  function sata(t, q, o, a, w) { add("sata", t, q, o, a, w); }
+  function fill(t, q, acc, w) { add("fill", t, q, null, acc, w); }
+  function order(t, q, items, w) { add("order", t, q, items, null, w); }
+
+  /* ---------- ek_bf ---------- */
+  mc("ek_bf", "A nurse is completing a home visit to a mother who is 3 days postpartum and breastfeeding her newborn. The mother expresses concern about the amount of weight the newborn has lost since birth. Which of the following is a response the nurse should make?",
+    ["\"You might want to offer water supplements between feedings.\"", "\"It is due to the newborn's loss of the influence of the maternal hormones.\"", "\"This might be related to your baby having 3 stools a day.\"", "\"The cause might be too short or infrequent feedings.\""], 3,
+    ["This is not an explanation for weight loss. Water supplements are not recommended at this time. The nurse should review the newborn's pattern of breast feeding, the mother's breast feeding technique, and factors that can influence decreased milk production.", "This is not an explanation for weight loss. Breastfed newborns typically lose 5% to 6% of body weight before gaining weight. A delayed period of weight gain might be due to a slower transition from early breast milk to mature milk.", "This is not an explanation for weight loss. The newborn who is being breastfed typically has 3 or more stools per day during the first few weeks.", "Breastfed newborns typically lose 5% to 6% of body weight before gaining weight. Slow weight gain might be due to inadequate breastfeeding, incorrect feeding techniques, or maternal factors such as breasts not emptying, stress, and fatigue."]);
+  mc("ek_bf", "A nurse is completing discharge instructions for a new mother and her 2-day-old newborn. The mother asks, \"How will I know if my baby gets enough breast milk?\" Which of the following responses should the nurse make?",
+    ["\"Your baby should have a wake cycle of 30 to 60 minutes after each feeding.\"", "\"Your baby should wet 6 to 8 diapers per day.\"", "\"Your baby should burp after each feeding.\"", "\"Your baby should sleep at least 6 hours between feedings.\""], 1,
+    ["Babies will typically sleep after a feeding, making this an unreliable indicator that the newborn is getting enough breast milk.", "Newborns should wet 6 to 8 diapers per day. This is an indication that the newborn is getting enough fluids.", "Burping the baby will not ensure the newborn is getting enough breast milk.", "A newborn should eat at least every 4 hr at night; however, length of sleep between feedings is not an indicator that the infant is getting enough breast milk."]);
+  mc("ek_bf", "A nurse is assisting a client with breastfeeding. The nurse explains that which of the following reflexes will promote the newborn to latch?",
+    ["Babinski", "Rooting", "Moro", "Stepping"], 1,
+    ["The Babinski reflex is elicited by stroking upward along the lateral edge of the sole of the newborn's foot. This reflex does not promote the newborn to latch.", "The rooting reflex is elicited when the client strokes the newborn's lips, cheek, or corner of the mouth with her nipple. The newborn will turn his head while making sucking motions with his mouth and latch onto the nipple.", "The Moro reflex is elicited by striking the surface next to the newborn to startle him. This reflex does not promote the newborn to latch.", "The stepping reflex is elicited by holding the newborn vertically with one foot in contact with a surface. The newborn will make leg movements that look like walking. This reflex does not promote the newborn to latch."]);
+  mc("ek_bf", "A nurse is caring for a client who is postpartum who asks the nurse when her breast milk will \"come in.\" Which of the following responses should the nurse make?",
+    ["Within 2 days", "In 3 to 5 days", "In 6 to 8 days", "In about 10 days"], 1,
+    ["In this time frame, most clients who are breastfeeding are still producing colostrum.", "By day 3 to 5, most clients who are breastfeeding begin to produce copious amounts of breast milk.", "Day 6 to 8 is not the usual time frame for the onset of breast milk production.", "Breast milk transitions to mature milk in about 10 days, but clients do produce breast milk before that time."]);
+  mc("ek_bf", "A nurse is caring for a client who is breastfeeding and states that her nipples are sore. Which of the following interventions should the nurse suggest?",
+    ["Apply mineral oil to the nipples between feedings.", "Keep the nipples covered between breastfeeding sessions.", "Increase the length of time between feedings.", "Change the newborn's position on the nipples with each feeding."], 3,
+    ["The client should apply purified lanolin to the nipples after feedings.", "The client should expose sore nipples to the air as much as possible.", "Decreasing the frequency of feedings does not prevent sore nipples or allow time for healing.", "When the client's nipple is sore due to breastfeeding, the client should break the suction with her finger, remove the newborn from the breast, and try a different position. The newborn's mouth should be open wide before connecting with the nipple."]);
+  mc("ek_bf", "A nurse is assisting a client who is postpartum with her first breastfeeding experience. When the client asks how much of the nipple she should put into the newborn's mouth, which of the following responses should the nurse make?",
+    ["\"You should place your nipple and some of the areola into her mouth.\"", "\"Babies know instinctively how much of the nipple to take into their mouth.\"", "\"Your baby's mouth is rather small so she will only take part of the nipple.\"", "\"Try to place the nipple, the areola, and some breast tissue beyond the areola into her mouth.\""], 0,
+    ["Placing the nipple and 2 to 3 cm of areolar tissue around the nipple into the baby's mouth aids in adequately compressing the milk ducts. This placement decreases stress on the nipple and prevents cracking and soreness.", "The client should not rely on the newborn to perfect the breastfeeding technique. The client's knowledge and guidance of the newborn are needed for successful breastfeeding.", "The size of the newborn's mouth has some effect on the ability of the newborn to latch, as do the size of the nipple and the areola. There are general guidelines the client should use to promote successful breastfeeding. If the newborn sucks on only a portion of the nipple, nipple soreness is likely to develop.", "Placing this much of the breast into the newborn's mouth might not be possible, and the client will feel discouraged and unsuccessful in attempting to latch the newborn."]);
+  mc("ek_bf", "Which finding indicates a good breastfeeding latch?",
+    ["Lips flanged outward and swallowing is heard", "Cheeks dimple inward with clicking sounds", "Only the nipple tip is in the baby's mouth", "The mother feels pinching pain throughout the feed"], 0,
+    ["Flanged lips with audible swallowing show effective milk transfer.", "Dimpling and clicking mean the baby is losing suction, which is a shallow latch.", "The mouth should cover the nipple and much of the areola. A nipple-only latch is painful and moves little milk.", "Ongoing pain signals a poor latch. Mild tenderness should ease after the first few sucks."]);
+  mc("ek_bf", "A breastfeeding newborn has a shallow latch and the mother's nipples are sore. What should the nurse teach?",
+    ["Break suction with a clean finger at the corner of the mouth, then re-latch with more areola", "Pull the baby off quickly and try again", "Switch to formula until the soreness heals", "Soreness is normal and will pass"], 0,
+    ["Breaking suction protects the nipple, and re-latching with more areola corrects the shallow latch.", "Pulling without breaking suction injures the nipple.", "Formula is not needed. Fixing the latch solves the problem and protects milk supply.", "Sore nipples are a sign of a poor latch, not something to wait out."]);
+  mc("ek_bf", "Which sequence of breast milk is correct?",
+    ["Colostrum, transitional milk, mature milk", "Mature milk, colostrum, transitional milk", "Transitional milk, colostrum, mature milk", "Colostrum, mature milk, transitional milk"], 0,
+    ["Colostrum comes first and is rich in IgA, transitional milk follows around day 3-4, and mature milk by about day 10.", "This reverses the order. Mature milk is the last stage.", "Transitional milk follows colostrum; it does not come before it.", "Transitional milk is the bridge between colostrum and mature milk."]);
+  mc("ek_bf", "Which statement describes foremilk?",
+    ["It is watery, lower in fat, and quenches the baby's thirst", "It is thick and highest in fat, released last", "It is only produced in the first 2 days", "It is produced only after 10 days"], 0,
+    ["Foremilk is released first and is thin and hydrating.", "This describes hindmilk.", "This describes colostrum.", "This describes mature milk."]);
+  mc("ek_bf", "Why should the nurse teach a mother to let the baby finish one breast before offering the other?",
+    ["Hindmilk is high in fat and calories and supports weight gain", "Foremilk contains all of the antibodies", "It lowers prolactin levels", "It prevents let-down"], 0,
+    ["A full feeding reaches the fat-rich hindmilk that drives growth.", "Antibodies are most concentrated in colostrum, and foremilk is not the reason.", "Emptying the breast keeps prolactin stimulated and supply up.", "Let-down is a hormone response; emptying the breast does not prevent it."]);
+  mc("ek_bf", "A mother says her breasts leak when she hears another baby cry. Which hormone is responsible?",
+    ["Oxytocin", "Prolactin", "Estrogen", "Progesterone"], 0,
+    ["Oxytocin is released by a baby's cry, sight, or suckling and causes let-down.", "Prolactin drives milk production, not the leaking response.", "Estrogen falls after birth and is not the let-down hormone.", "Progesterone drops after the placenta is delivered, which allows lactation to begin."]);
+  mc("ek_bf", "Which statement shows understanding of the lactational amenorrhea method (LAM)?",
+    ["It works only with exclusive breastfeeding, a baby under 6 months, and no return of menses", "It is reliable for 12 months with any amount of supplementing", "It also protects against STIs", "Ovulation never happens while breastfeeding"], 0,
+    ["All three conditions must be met for LAM to be reliable.", "LAM is limited to 6 months and exclusive breastfeeding.", "Only condoms protect against STIs.", "Ovulation can return, especially with supplements or longer gaps between feeds."]);
+  sata("ek_bf", "Select teaching points about newborn feeding frequency and intake.",
+    ["Breastfeed every 2-3 hours, about 8-12 times in 24 hours", "Wake the baby if 3 hours pass since the last feeding", "Feed on cues such as rooting and hand-to-mouth", "Limit each feeding to 5 minutes per breast", "Expect 6 or more wet diapers daily once milk is in"], [0, 1, 2, 4],
+    ["This frequency meets caloric needs and builds supply.", "Waking a sleepy newborn keeps intake adequate.", "Cues show readiness; crying is a late sign.", "Timed limits can stop the baby before reaching hindmilk.", "Six or more wet diapers shows adequate intake."]);
+  mc("ek_bf", "A breastfeeding mother asks about birth control. Which method is best avoided early postpartum?",
+    ["Combined estrogen-progestin pill", "Progestin-only pill", "Copper IUD", "Condoms"], 0,
+    ["Estrogen can lower milk supply, so avoid it early.", "Progestin-only methods do not reduce supply and are appropriate.", "It is hormone-free and has no effect on milk supply.", "Barrier methods have no effect on milk supply."]);
+
+  /* ---------- ek_pp ---------- */
+  mc("ek_pp", "A nurse is caring for a client who is 1 hr postpartum and observes a large amount of lochia rubra and several small clots on the client's perineal pad. The fundus is midline and firm at the umbilicus. Which of the following actions should the nurse take?",
+    ["Document the findings and continue to monitor the client.", "Notify the client's provider.", "Increase the frequency of fundal massage.", "Encourage the client to empty her bladder."], 0,
+    ["These are expected findings. At 1 hr postpartum, lochia rubra should be intermittent and associated with uterine contractions. The volume of lochia resembles that of a heavy menstrual period. Small clots are common. The nurse should document the findings and continue to monitor the client.", "These are expected findings, so there is no need to notify the provider.", "These are expected findings and the fundus is already firm. Increasing the frequency of fundal massage is not indicated at this time.", "These are expected findings, and the fundus is firm at the midline. If the fundus was deviated, this would be an indication of a distended bladder and the client should be encouraged to void to prevent uterine atony."]);
+  mc("ek_pp", "A nurse is caring for a client who is postpartum and received methylergonovine. Which of the following findings indicates that the medication was effective?",
+    ["Fundus firm to palpation", "Increase in blood pressure", "Increase in lochia", "Report of absent breast pain"], 0,
+    ["Methylergonovine is an oxytocic medication that is administered to promote uterine contractions. This medication is indicated for treatment of postpartum hemorrhage caused by uterine atony or subinvolution; the desired effect is an increase in uterine tone.", "A rise in blood pressure is an adverse effect of the medication.", "This finding would indicate the medication was not effective.", "Methylergonovine has no effect on breast discomfort."]);
+  mc("ek_pp", "A nurse is assessing a client who is 3 days postpartum and is breastfeeding. The nurse notes that the fundus is three fingerbreadths below the umbilicus, lochia rubra is moderate, and the breasts are hard and warm to palpation. Which of the following interpretations of these findings should the nurse make?",
+    ["The client is exhibiting early indications of mastitis.", "Additional interventions are not indicated at this time.", "Application of a heating pad to the breasts is indicated.", "The client should be advised to remove her nursing bra."], 1,
+    ["Clinical manifestations of mastitis include chills, fever, malaise, and a localized area of breast tenderness.", "For this postpartum day, the client's fundal location and lochia characteristics are within the expected reference range. Breast engorgement is typical, as this is the time when the breasts begin producing milk. Frequent breastfeeding and routine care can help relieve engorgement.", "Heat increases blood flow and can, therefore, increase congestion in breasts that are already engorged. A heating pad should not be offered. However, a warm shower before breastfeeding can help relieve engorgement.", "Wearing a nursing bra helps reduce discomfort due to engorgement."]);
+  mc("ek_pp", "A nurse is caring for a client who experienced a vaginal delivery 12 hr ago. When palpating the client's abdomen, at which of the following positions should the nurse expect to find the uterine fundus?",
+    ["At the level of the umbilicus", "2 cm above the umbilicus", "One fingerbreadth above the symphysis pubis", "To the right of the umbilicus"], 0,
+    ["Within 12 hr, the fundus should be palpable at the level of the umbilicus and then recede 1 to 2 cm each day.", "The position of the fundus 2 cm above the umbilicus is an indication of subinvolution.", "The uterus would be palpated at a position between the umbilicus and symphysis pubis in a client who is approximately 1 week postpartum.", "A uterine fundus that is deviated to the right or left of the umbilicus indicates the client has a full bladder."]);
+  mc("ek_pp", "A nurse is assessing a client who is 8 hr postpartum and multiparous. Which of the following findings should alert the nurse to the client's need to urinate?",
+    ["Moderate lochia rubra", "Fundus three fingerbreadths above the umbilicus", "Moderate swelling of the labia", "Blood pressure 130/84 mm Hg"], 1,
+    ["Moderate lochia rubra is an expected finding 8 hr following delivery and does not correlate with a full bladder.", "A full bladder can raise the level of uterine fundus and possibly deviate it to the side.", "Swelling in the perineal area is an expected finding following a vaginal delivery and does not correlate with a full bladder.", "The client's blood pressure after delivery does not correlate with a full bladder."]);
+  mc("ek_pp", "A nurse is caring for a client who is 12 hr postpartum following a vaginal delivery. Which of the following findings should the nurse expect?",
+    ["Fundus soft, 1 cm to the right of the umbilicus", "Fundus firm, at the level of the umbilicus", "Fundus present, to the left of the umbilicus", "Fundus soft, 2 cm above the umbilicus"], 1,
+    ["A soft or boggy fundus indicates that the uterine muscle is not contracted. A fundal location that is not midline often indicates the client has a full bladder.", "Within 12 hours after birth, the fundal tone is expected to be firm and the location is typically palpated midline and at the level of the umbilicus.", "The fundal tone, location, and placement all need to be assessed and monitored to prevent the occurrence of hemorrhage.", "The fundus should be palpated as firm, indicating that it is contracted. Additionally, the expected location is at or below the level of the umbilicus."]);
+  mc("ek_pp", "A nurse is caring for a client who is postpartum and finds the fundus slightly boggy and displaced to the right. Based on these findings, which of the following actions should the nurse take?",
+    ["Encourage the client to perform Kegel exercises.", "Encourage the client to move to the left lateral position.", "Ask the client to rate her pain.", "Assist the client to the bathroom to void."], 3,
+    ["Kegel exercises help to restore pelvic muscle tone that is often lost during pregnancy and birth.", "Encouraging the client to lie on her side can decrease discomfort from an episiotomy or perineal laceration.", "Many women experience discomfort during the postpartum period. However, the fundal assessment is not an expected finding and needs further investigation.", "A full bladder causes the uterus to be displaced above the umbilicus and off to one side. This prevents the uterus from contracting normally and increases the risk of hemorrhage."]);
+  mc("ek_pp", "A nurse is caring for a client who is 5 hr postpartum following a vaginal birth of a newborn weighing 9 lb 6 oz. (4252 g). The nurse should recognize that this client is at risk for which of the following postpartum complications?",
+    ["Puerperal infection", "Retained placental fragments", "Thrombophlebitis", "Uterine atony"], 3,
+    ["Endometritis is the most common cause of postpartum infections.", "Placental retention due to poor separation is common in very preterm births.", "The major causes of thromboembolic disease in the pregnant client are venous stasis and hypercoagulation.", "A uterus that is over distended, such as from a macrosomic fetus, has an increased risk of uterine atony."]);
+  mc("ek_pp", "A nurse is caring for a client who is 4 hr postpartum following a vaginal birth. The client has saturated a perineal pad within 10 min. Which of the following actions should the nurse take first?",
+    ["Assess client's blood pressure.", "Assess the bladder for distention.", "Massage the client's fundus.", "Prepare to administer a prescribed oxytocic preparation."], 2,
+    ["Blood pressure is not a reliable indicator of impending shock from hemorrhage because compensatory mechanisms prevent a significant drop in blood pressure until the client has lost 30 to 40% of her blood volume.", "While a distended bladder can displace the uterus and interfere with contractions, this is not the first action the nurse should take.", "The initial management of excessive uterine bleeding is firm massage of the uterine fundus. This action stimulates contraction of the uterine muscles, which constrict the maternal uterine blood vessels.", "If manual massage of the uterine fundus does not increase contractility and slow bleeding, it would then be appropriate to empty the bladder and administer a continuous IV infusion of oxytocin."]);
+  mc("ek_pp", "A nurse is caring for a client who experienced a vaginal birth 3 hr ago. Upon palpation, the fundus is displaced to the right of midline, is firm, and is two fingerbreadths above the umbilicus. Which of the following actions should the nurse complete at this time?",
+    ["Massage the fundus.", "Insert a urinary catheter.", "Have the client urinate.", "Administer an analgesic."], 2,
+    ["The client's fundus is firm, so there is no indication for massage.", "Catheterization might be necessary if the client is unable to void after implementing additional measures to promote urination.", "A full bladder displaces the uterine fundus and elevates it above the level of the umbilicus. This can lead to uterine atony and excessive bleeding. Having the client urinate allows the uterus to return to midline and remain below the umbilicus.", "Unless the client reports pain, there is no indication to administer an analgesic."]);
+  mc("ek_pp", "A nurse is admitting a client who experienced a vaginal birth 2 hr ago. The client is receiving an IV of lactated Ringer's with 25 units of oxytocin infusing and has large rubra lochia. Vital signs include blood pressure 146/94 mm Hg, pulse 80/min, and respiratory rate 18/min. The nurse reviews the prescriptions from the provider. Which of the following prescriptions requires clarification?",
+    ["Methylergonovine 0.2 mg IM now.", "Insert an indwelling urinary catheter.", "Administer oxygen by nonrebreather mask at 5 L/min.", "Obtain laboratory study of prothrombin and partial thromboplastin time."], 0,
+    ["Methylergonovine is contraindicated in the client with a blood pressure greater than 140/90 mm Hg. This prescription requires clarification.", "Insertion of an indwelling urinary catheter is an appropriate prescription for the client who has a hypotonic uterus.", "Administration of oxygen by a nonrebreather mask at 5 L/min is an appropriate prescription for the client who has a hypotonic uterus.", "Laboratory studies include prothrombin time, partial thromboplastin time, complete blood count with platelet count, fibrinogen, fibrin split products, blood type, and antibody screen for the client who has a hypotonic uterus."]);
+  mc("ek_pp", "A nurse is caring for a client who is 2 hr postpartum following a vaginal birth. Which of the following findings indicates the client's bladder is distended?",
+    ["Client report of frequent uterine contractions", "Less than 2.5 cm of rubra lochia on perineal pad", "Fundus palpable to right of midline", "Client report of increased thirst"], 2,
+    ["Bladder distention can cause uterine atony, which is failure of the uterine muscles to contract. The client would not report experiencing frequent uterine contractions; the fundus would feel boggy to palpation.", "Bladder distention can cause excessive bleeding, which is due to uterine atony. Scant (< 2.5 cm) rubra lochia on the clients perineal pad is consistent with a finding of a firm, contracted uterus and absence of bladder distention.", "Bladder distention results in uterine displacement, pushing the fundus above the umbilicus and away from the midline. The fundus might feel boggy to palpation and does not contract normally.", "Fluid shifts due to decreased estrogen levels, changes in body structure, and blood volume, as well as the length of labor, can result in diaphoresis and increased thirst. They are not associated with bladder distention."]);
+  mc("ek_pp", "A nurse is caring for a client who is 12 hr postpartum. Which of the following findings should alert the nurse to the possibility of a postpartum complication?",
+    ["Orthostatic hypotension", "Fundus palpable at the umbilicus", "Urine output of 3,000 mL in 12 hr", "Heart rate 110/min"], 3,
+    ["A client report of dizziness or feeling faint upon standing is an expected finding in the first 48 hr postpartum. This is the result of large fluid shifts and altered hormone levels.", "At 12 hr after delivery, the fundus should be at the level of the umbilicus, and then it should descend about 1 to 2 cm every 24 hr.", "Profound diuresis is common after delivery due to the decrease in estrogen and the body getting rid of excess fluid volume.", "A rapid or increasing heart rate can be a manifestation of fluid volume depletion related to hemorrhage. The nurse should further evaluate the client for evidence of postpartum hemorrhage."]);
+  mc("ek_pp", "A nurse is assessing a client who is 4 hr postpartum following a vaginal delivery. Which of the following findings should the nurse identify as the priority?",
+    ["Saturated perineal pad in 30 min", "Deep tendon reflexes 4+", "Fundus at level of umbilicus", "Approximated edges of episiotomy"], 1,
+    ["The client will have lochia rubra for the first 1 to 3 days. A saturated perineal pad in 15 min or less can indicate excessive bleeding. Therefore, the nurse should not identify this as the priority finding. The nurse should also monitor for blood under the client's buttocks.", "Deep tendon reflexes 4+ are hyperactive and indicate that the client is at greatest risk for preeclampsia and seizures. The nurse should identify this as the priority finding. The nurse should also monitor for headaches, visual disturbances and epigastric pain. The provider will likely prescribe magnesium sulfate IV infusion.", "The client's fundus should be firm, midline, and at the level of the umbilicus for the first 24 hr after delivery. The fundus will involute approximately 1 cm/day and will descend 1 to 2 cm/day. Therefore, the nurse should not identify this as the priority finding.", "Approximated edges of the episiotomy indicate good wound healing. Therefore, the nurse should not identify this as the priority finding. Redness, warmth, and drainage can indicate infection."]);
+  mc("ek_pp", "A nurse is caring for a client who is 2 hr postpartum. The nurse notes that the client soaked a perineal pad in 10 min, the client's skin color is ashen, and she states she feels weak and light headed. After applying oxygen via nonrebreather face mask at 10 L/min which of the following actions should the nurse take next?",
+    ["Insert an indwelling urinary catheter.", "Administer oxytocin by continuous IV infusion.", "Tilt the client onto her right side with her legs elevated to at least 30°.", "Massage the client's fundus to promote contractions."], 3,
+    ["The nurse should insert an indwelling urinary catheter to monitor kidney function. However, there is another action the nurse should take first.", "The client should have two IV catheters for IV fluids and the nurse should either add oxytocin to an existing IV infusion or start an infusion to maintain uterine contractions. However, there is another action the nurse should take first.", "The nurse should tilt the client onto her right side with her legs elevated to at least 30° to promote blood flow back to the heart. However, there is another action the nurse should take first.", "A soaked perineal pad in less than 15 min, ashen skin color, and report of weakness and light headedness can indicate that the client is at greatest risk for hypovolemic shock. Therefore, the next action the nurse should take is to massage the client's fundus to expel blood clots and promote uterine contraction to stop the bleeding."]);
+  mc("ek_pp", "A nurse is caring for a client who experienced a vaginal birth 12 hr ago. The nurse recognizes the client is in the dependent, taking in phase of maternal postpartum adjustment. Which of the following findings should the nurse expect during this phase?",
+    ["Expressions of excitement", "Lack of appetite", "Focus on the family unit and its members", "Eagerness to learn newborn care skills"], 0,
+    ["Expressing excitement and being talkative are characteristic of this phase.", "A lack of appetite is not a characteristic of maternal postpartum adjustment.", "A focus on the family unit and its members is a finding in the interdependent, letting go phase of maternal postpartum adjustment.", "A desire to learn newborn care is a finding in the dependent-independent, taking hold phase of maternal postpartum adjustment."]);
+  mc("ek_pp", "A nurse in a clinic is caring for a client who is 3 weeks postpartum following the birth of a healthy newborn. The client reports feeling \"down\" and sad, having no energy, and wanting to cry. Which of the following is a priority action by the nurse?",
+    ["Assist the family to identify prior use of positive coping skills in family crises.", "Ask the client if she has considered harming her newborn.", "Anticipate a prescription by the provider for an antidepressant.", "Reinforce postpartum and newborn care discharge teaching."], 1,
+    ["Assisting the family to identify the use of coping mechanisms at a time of family crisis is important, but it is not the first action the nurse should consider.", "When using the nursing process in caring for a client, the first action should focus on assessment of the client's mood, ability to concentrate, thought processes, and if the client has had thoughts of self-harm or of injuring her newborn.", "Although it is likely that the client will need medication therapy, there are other actions that the nurse should consider first in using the nursing process.", "It is appropriate to reinforce discharge teaching that focuses on the postpartum period and care of a newborn, but this is not the priority action by the nurse at this time."]);
+  mc("ek_pp", "A nurse is assessing a client for postpartum infection. Which of the following findings should indicate to the nurse that the client requires further evaluation for endometritis?",
+    ["Moderate amount of dark red lochia with a bloody odor", "A localized area of breast tenderness", "Pelvic pain", "Hematuria"], 2,
+    ["Foul-smelling, profuse lochia indicates endometritis.", "Localized breast tenderness along with fever and malaise are symptoms of mastitis.", "Indications of endometritis, the most common postpartum infection, include chills, fever, tachycardia, anorexia, fatigue, and pelvic pain.", "Hematuria is an indication of a urinary tract infection."]);
+  mc("ek_pp", "A nurse is caring for a client who is 7 days postpartum and calls the clinic to report pain and redness of her left calf. Besides seeing her provider, which of the following interventions should the nurse suggest?",
+    ["Flex her knee while resting.", "Massage the area.", "Elevate her leg.", "Apply cold compresses."], 2,
+    ["The client should avoid sharp flexion of the knee because it inhibits venous return.", "The client should not massage the leg because it could turn a clot into an embolus.", "The client should elevate her leg to encourage venous return and to relieve pain.", "The client should apply moist heat to the affected area."]);
+  mc("ek_pp", "A nurse is planning care for a client who is 2 hours postpartum following a cesarean birth. The client has a history of thromboembolic disease. Which of the following nursing interventions should be included in the plan of care?",
+    ["Apply warm, moist heat to the client's lower extremities.", "Massage the client's posterior lower legs.", "Place pillows under the client's knees when resting in bed.", "Have the client ambulate."], 3,
+    ["Warm, moist heat helps relieve the discomfort of thrombophlebitis, but it does not prevent it.", "Massage of the legs does not prevent blood clot formation, and can dislodge a clot that is present and undetected.", "Flexing the client's knees by placing pillows under them causes blood to pool in the lower extremities and increases the risk of thrombophlebitis.", "Venous stasis is a major cause of thrombophlebitis. To prevent clot formation, have the client ambulate as soon as she can after delivery and as often as possible."]);
+  mc("ek_pp", "A nurse is assessing a client who is 12 hr postpartum and received spinal anesthesia for a cesarean birth. Which of the following findings requires immediate intervention by the nurse?",
+    ["Blood pressure 100/70 mm Hg", "Headache pain rated a 6 on a scale of 0 to 10", "Respiratory rate 10/min", "Urinary output 30 mL/hr"], 2,
+    ["Although hypotension is a potential adverse effect of spinal anesthesia, the client's BP is still within the expected reference range. Therefore, another finding is the priority.", "A headache is a potential adverse effect of spinal anesthesia. Therefore, another finding is the priority.", "A client who has received spinal anesthesia is at risk for respiratory depression and hypotension. A respiratory rate of 10/min indicates bradypnea and requires immediate intervention.", "Although difficulty urinating is a potential adverse effect of spinal anesthesia, the client's output is within the expected reference range. Therefore, another finding is the priority."]);
+  mc("ek_pp", "A nurse is performing a physical examination of a client who is 1 day postpartum. Which of the following findings requires immediate intervention?",
+    ["Decreased urge to void", "Increased urine output", "Displaced fundus from the midline", "Fundal height below the umbilicus"], 2,
+    ["This is an expected finding in the postpartum period and does not require immediate intervention. Birth trauma, increased bladder capacity after childbirth, and anesthesia can cause a decreased urge to void. Pelvic soreness caused by the forces of labor, vaginal lacerations, or an episiotomy reduces or alters the voiding reflex. The nurse should monitor the client's voiding pattern.", "Within 12 hr of birth, clients begin to lose the excess tissue fluid accumulated during pregnancy. Postpartum diuresis is caused by decreased estrogen levels. This is an expected finding and does not require immediate intervention.", "A distended bladder can cause uterine atony and lateral displacement of the fundus from the midline of the lower abdomen, usually to the right. This requires immediate intervention because the distended bladder pushes the uterus up and to the side, which prevents it from contracting firmly. Uterine atony results from the inability of the uterine muscle to contract adequately after birth. This can lead to postpartum hemorrhage.", "Involution is the return of the uterus to a nonpregnant state. At the end of the third stage of labor, the uterus is in the midline, approximately 2 cm below the level of the umbilicus. Within 12 hr, the fundus rises to approximately the level of the umbilicus. The fundus descends 1 to 2 cm every 24 hr. Therefore, at 1 day postpartum, the fundal height should be 1 to 2 cm (fingerbreadths) below the umbilicus. This is an expected finding and does not require immediate intervention."]);
+  mc("ek_pp", "A nurse is caring for a client who is considering several methods of contraception. Which of the following methods of contraception should the nurse identify as being most reliable?",
+    ["A male condom", "An intrauterine device (IUD)", "An oral contraceptive", "A diaphragm with spermicide."], 1,
+    ["This method of contraception has 11 to 16 failures for every 100 users.", "An IUD is found to have a failure rate of less than 1 in 100 users, which makes it one of the most reliable methods of contraception.", "This method of contraception has about 8 failures for every 100 users, due to failure to take pill consistently and decreased efficacy when taken with certain medications.", "This method of contraception has about 16 failures for every 100 users during the first year of use."]);
+  mc("ek_pp", "A nurse is reinforcing teaching about contraceptive methods with a client. Which of the following should the nurse recognize as a contraindication for diaphragm use?",
+    ["The client is 42 years old.", "The client smokes cigarettes.", "The client has pelvic relaxation.", "The client has a 3-month-old infant."], 2,
+    ["Age is not a contraindication to the use of a diaphragm.", "Cigarette smoking is not a contraindication to the use of a diaphragm.", "Pelvic relaxation and large cystocele are contraindications for diaphragm use.", "Pregnancy changes the size and shape of the cervical opening, which will affect the fit of the diaphragm. The uterus and cervix returns to the prepregnant state at 6 weeks postpartum. At this time, the client should consider being refitted for a diaphragm to resume sexual activity. The diaphragm is contraindicated immediately after pregnancy to allow healing and avoid infection."]);
+  mc("ek_pp", "On postpartum day 4 the fundus is expected to be about:",
+    ["4 fingerbreadths below the umbilicus", "At the umbilicus", "2 fingerbreadths above the umbilicus", "Not palpable"], 0,
+    ["The fundus descends about 1 fingerbreadth (1 cm) a day.", "This is the expected level in the first hours to day 1.", "A high fundus after day 1 suggests a full bladder or retained tissue.", "It is not palpable until about day 10-14."]);
+  mc("ek_pp", "When is lochia serosa expected?",
+    ["Days 4-10", "The first 3 days", "Weeks 4-6", "It is never normal"], 0,
+    ["Serosa is pink-brown and follows rubra.", "This is rubra, which is red.", "This is alba, which is whitish-yellow.", "Lochia progresses normally from rubra to serosa to alba."]);
+  mc("ek_pp", "On day 5 postpartum, lochia that had turned pink-brown becomes bright red. What should the nurse do first?",
+    ["Assess the fundus, massage if boggy, and notify the provider", "Reassure the client that this is normal", "Encourage more walking", "Apply ice to the perineum"], 0,
+    ["A return to bright red can mean bleeding or retained tissue, so assess and escalate.", "Bright red after serosa is not expected.", "This does not address possible hemorrhage.", "Ice treats perineal swelling, not bleeding."]);
+  mc("ek_pp", "Which medication is first-line for postpartum hemorrhage caused by uterine atony?",
+    ["Oxytocin (Pitocin)", "Methylergonovine", "Carboprost", "Misoprostol"], 0,
+    ["Oxytocin stimulates uterine contraction and is given first.", "It is a second-line drug and is contraindicated in hypertension.", "It is a second-line drug and is contraindicated in asthma.", "It is used when oxytocin is ineffective or unavailable."]);
+  sata("ek_pp", "Select signs of postpartum hemorrhage.",
+    ["Boggy fundus", "Saturating a pad in 15 minutes", "Tachycardia with falling blood pressure", "Firm fundus with one pad over 4 hours", "Pale, cool, clammy skin"], [0, 1, 2, 4],
+    ["Atony is the leading cause of hemorrhage.", "This is heavy bleeding.", "These are late signs of hypovolemia.", "This is an expected, normal finding.", "This is a sign of shock."]);
+  sata("ek_pp", "Select contraceptive methods appropriate for a breastfeeding mother.",
+    ["Progestin-only pill", "Copper IUD", "Combined estrogen pill in the first 6 weeks", "Condoms", "Combined pill, because supply is never affected"], [0, 1, 3],
+    ["It does not affect milk supply.", "It is hormone-free with no effect on supply.", "Estrogen may lower supply and raises clot risk early postpartum.", "Barrier methods have no effect on supply.", "Estrogen can reduce supply, so this statement is false."]);
+  mc("ek_pp", "Which teaching about the vaginal ring (NuvaRing) is correct?",
+    ["Keep it in for 3 weeks, remove it for 1 week, then insert a new ring", "Replace it every week", "Leave it in for 6 months", "Remove it before every intercourse"], 0,
+    ["The ring releases hormones for 3 weeks, and the ring-free week allows withdrawal bleeding.", "That describes the patch, not the ring.", "It is replaced every month.", "It stays in during intercourse."]);
+  mc("ek_pp", "Which teaching about the diaphragm is correct?",
+    ["It must be refitted after childbirth and after a weight change of about 10 lb", "It never needs refitting", "It can be removed 1 hour after intercourse", "It protects against STIs"], 0,
+    ["Birth and weight change alter cervix and vaginal size, so the fit changes.", "It needs a new fitting after birth or weight change.", "It must stay in place for 6 hours after sex.", "It does not; only condoms do."]);
+  mc("ek_pp", "Which teaching about condoms is correct?",
+    ["Male and female condoms should not be used together", "Use two male condoms for extra protection", "Oil-based lubricants are safe with latex", "Condoms are not needed if on the pill"], 0,
+    ["Using both causes friction and breakage.", "Double condoms rub together and are more likely to tear.", "Oil weakens latex and causes breakage.", "The pill does not protect against STIs."]);
+  mc("ek_pp", "A postpartum mother confidently asks the nurse how to bathe her baby and takes over diaper changes. Which phase is this?",
+    ["Taking-hold", "Taking-in", "Letting-go", "Bonding failure"], 0,
+    ["She is ready to learn and become independent, usually from day 2-3.", "This phase is dependent and passive, with talk about the birth.", "This phase comes weeks later when she accepts her role.", "She is engaged with the baby, so this does not apply."]);
+  mc("ek_pp", "A mother tells the nurse she accepts her baby as a separate person and is adjusting to her new role weeks after birth. Which phase is this?",
+    ["Letting-go", "Taking-in", "Taking-hold", "Postpartum blues"], 0,
+    ["She gives up the fantasy baby and old role and accepts the real one.", "This is the first 1-2 days of dependence.", "This is the early learning phase, usually day 2-3.", "Blues are mood symptoms, not a role phase."]);
+  mc("ek_pp", "A mother on day 3 is tearful and has mood swings but is caring for her baby. Symptoms are expected to ease within 2 weeks. This is most consistent with:",
+    ["Postpartum blues", "Postpartum depression", "Postpartum psychosis", "Normal bonding failure"], 0,
+    ["Blues are common, start in the first days, and resolve within about 2 weeks.", "Depression lasts longer than 2 weeks and impairs function.", "Psychosis involves delusions or hallucinations.", "This is not a diagnosis, and she is caring for her baby."]);
+  mc("ek_pp", "Three weeks after birth a mother has hopelessness, little interest in her baby, and poor sleep even when the baby sleeps. This is most consistent with:",
+    ["Postpartum depression", "Postpartum blues", "Postpartum psychosis", "Adjustment during taking-hold"], 0,
+    ["Persistent symptoms beyond 2 weeks with impaired function suggest depression.", "Blues resolve within about 2 weeks.", "There are no delusions or hallucinations described.", "This phase does not cause hopelessness."]);
+  mc("ek_pp", "A postpartum mother reports voices telling her to harm her baby and has delusions. What is the nurse's priority?",
+    ["Ensure safety of the mother and baby and seek immediate psychiatric evaluation", "Teach relaxation techniques", "Schedule a follow-up in 2 weeks", "Encourage her to nap"], 0,
+    ["Psychosis is an emergency with risk of suicide or infanticide.", "This is not enough for an unsafe client.", "Delay is unsafe.", "This does not address the risk."]);
+  sata("ek_pp", "Select findings that suggest postpartum depression rather than baby blues.",
+    ["Symptoms lasting longer than 2 weeks", "Loss of interest in the baby", "Crying on day 3 that resolves", "Difficulty bonding with the baby", "Sleep and appetite disturbance"], [0, 1, 3, 4],
+    ["Blues resolve within about 2 weeks.", "Depression affects interest and bonding.", "This is typical of blues.", "Depression impairs bonding.", "These persist beyond the baby's schedule."]);
+
+  /* ---------- ek_reflex ---------- */
+  mc("ek_reflex", "A nurse is caring for a newborn and assessing newborn reflexes. To elicit the Moro reflex, the nurse should take which of the following actions?",
+    ["Perform a sharp hand clap near the infant.", "Hold the newborn vertically allowing one foot to touch the table surface.", "Place a finger at the base of the newborn's toes.", "Turn the newborn's head quickly to one side."], 0,
+    ["To elicit the Moro reflex, the nurse performs a sharp hand clap near the newborn and observes symmetric abduction and extension of the arms, fanning of the fingers with the thumb and forefinger to form a C, and then a return to a relaxed flexion position.", "This position is used to elicit the stepping reflex. The newborn should respond by alternating flexion and extension of his feet, as if he was walking.", "This action elicits the plantar grasp reflex. The expected response is that the newborn's toes will curl downward.", "This action elicits the tonic neck reflex. The expected response is that the newborn will extend the arm and leg on the side where the head was turned, while the opposite arm and leg will flex."]);
+  mc("ek_reflex", "What is the normal Moro (startle) response?",
+    ["Arms abduct and extend, then draw in as if embracing, often with a cry", "Toes fan out", "The head turns toward the touch", "Fingers close around an object"], 0,
+    ["This is the classic Moro response to a loud noise or sudden head drop.", "This is the Babinski reflex.", "This is the rooting reflex.", "This is the palmar grasp."]);
+  mc("ek_reflex", "During the Moro reflex only the right arm moves. What should the nurse suspect?",
+    ["Fractured clavicle or brachial plexus injury", "A normal variation", "Prematurity", "Hypoglycemia"], 0,
+    ["Movement on one side only points to injury on the weak side.", "The response should be symmetric.", "Preterm responses are incomplete on both sides.", "This causes jitteriness, not one-sided weakness."]);
+  mc("ek_reflex", "The nurse strokes a newborn's cheek. Which response is normal for the rooting reflex?",
+    ["The head turns toward the touch and the mouth opens", "The toes fan", "The arms extend", "The fingers grasp"], 0,
+    ["Rooting helps the baby find the breast.", "This is the Babinski reflex.", "This is part of the Moro reflex.", "This is the palmar grasp."]);
+  mc("ek_reflex", "Which response is a normal Babinski reflex in a newborn?",
+    ["Toes fan out as the sole is stroked heel to toe", "Toes curl down", "The foot withdraws", "The knee extends"], 0,
+    ["The big toe dorsiflexes and toes fan, which is normal in infants.", "This is the plantar grasp or an older child's response.", "This is a withdrawal reflex.", "This is not a Babinski response."]);
+  mc("ek_reflex", "Which reflex normally persists the longest?",
+    ["Babinski", "Moro", "Rooting", "Palmar grasp"], 0,
+    ["It lasts until about 1-2 years of age.", "It fades around 4-6 months.", "It fades around 3-4 months.", "It fades around 3-6 months."]);
+  mc("ek_reflex", "A newborn's head is turned to the right and the right arm and leg extend while the left arm and leg flex. This is the:",
+    ["Tonic neck (fencing) reflex", "Stepping reflex", "Moro reflex", "Plantar grasp"], 0,
+    ["It fades by about 3-4 months.", "This is walking motion when held upright.", "This is a startle response.", "This is toes curling when the sole is touched."]);
+  mc("ek_reflex", "The nurse holds a newborn upright with the feet on a firm surface and the baby makes walking movements. This is the:",
+    ["Stepping reflex", "Rooting reflex", "Moro reflex", "Babinski reflex"], 0,
+    ["It fades by about 2 months.", "This is turning toward a touch on the cheek.", "This is a startle response.", "This is toes fanning when the sole is stroked."]);
+  mc("ek_reflex", "A 30-week preterm newborn has a weak suck and absent gag reflex. What does this indicate?",
+    ["Immaturity, so gavage feeding is needed", "Neurologic injury only", "A normal finding for any gestation", "Milk allergy"], 0,
+    ["Suck and swallow coordinate around 32-34 weeks.", "Immature reflexes are expected at this gestation.", "Term infants have strong suck and gag reflexes.", "This is not related to allergy."]);
+
+  /* ---------- ek_apgar ---------- */
+  fill("ek_apgar", "At 1 minute: HR 130, strong cry, full flexion, active, pink body and extremities. What is the Apgar score? Enter the number only.", ["10"], "HR >100 = 2; cry = 2; flexion = 2; grimace/cry = 2; pink = 2. Total 10.");
+  fill("ek_apgar", "At 5 minutes: HR 140, vigorous cry, full flexion, sneezes with suctioning, pink body with blue hands and feet. What is the Apgar score? Enter the number only.", ["9"], "Only acrocyanosis loses a point (color = 1). Total 9.");
+  fill("ek_apgar", "At 1 minute: HR 80, slow irregular breathing, some flexion, grimace, pale blue skin. What is the Apgar score? Enter the number only.", ["4"], "HR <100 = 1; respirations irregular = 1; some flexion = 1; grimace = 1; pale/blue = 0. Total 4.");
+  fill("ek_apgar", "At 1 minute: no heart rate, no respirations, limp, no response to stimulation, blue. What is the Apgar score? Enter the number only.", ["0"], "Every component scores 0, so resuscitation begins immediately.");
+  mc("ek_apgar", "A newborn's 1-minute Apgar is 4. What should the nurse expect to do?",
+    ["Stimulate, suction, give oxygen, and prepare for resuscitation per protocol, then reassess at 5 minutes", "Provide routine care", "Send the baby to the nursery", "Wait until 10 minutes to reassess"], 0,
+    ["A score of 4-6 needs stimulation, suctioning, and oxygen, with reassessment at 5 minutes.", "Routine care is for scores of 7-10.", "The infant needs intervention first.", "Scores are repeated at 5 minutes."]);
+  mc("ek_apgar", "Which Apgar components are most reduced by heavy maternal sedation?",
+    ["Respiratory effort and reflex irritability", "Color only", "Heart rate only", "Muscle tone only"], 0,
+    ["Narcotics and sedatives depress breathing and response to stimulation.", "Color reflects oxygenation, not sedation directly.", "Heart rate is usually preserved.", "Tone can be reduced, but respiration and reflex are the classic effects."]);
+  mc("ek_apgar", "A newborn has a pink body with blue hands and feet. How is color scored?",
+    ["1", "0", "2", "It is not scored"], 0,
+    ["Acrocyanosis scores 1.", "Zero is blue or pale all over.", "Two is pink all over.", "Color is one of the five Apgar components."]);
+
+  /* ---------- ek_resp ---------- */
+  mc("ek_resp", "A nurse is assessing a newborn immediately following a scheduled cesarean delivery. Which of the following assessments is the nurse's priority?",
+    ["Respiratory distress", "Hypothermia", "Accidental lacerations", "Acrocyanosis."], 0,
+    ["Shortly before labor, there is a decreased production of fetal lung fluid and a catecholamine surge that promotes fluid clearance from the lungs. Newborns born by cesarean, in which labor did not occur, can experience lung fluid retention, which leads to respiratory distress. The priority assessment when using the airway, breathing, circulation (ABC) approach to client care is to monitor the newborn for respiratory distress.", "Hypothermia in a newborn can lead to both respiratory distress and hypoglycemia. While it is important to monitor for this, there is another assessment that is the priority.", "Accidental lacerations can be inflicted with the scalpel during a cesarean birth. They are typically superficial and rarely need sutures. While it is important to assess for the presence of these, there is another assessment that is the priority.", "Acrocyanosis is a bluish discoloration of the hands and feet and is an expected finding in the first 24 hours following delivery. There is another assessment that is the priority."]);
+  mc("ek_resp", "A nurse is assessing a newborn 1 hr after birth. Which of the following respiratory rates is within the expected reference range for a newborn?",
+    ["22/min", "48/min", "100/min", "110/min"], 1,
+    ["This rate is below the expected reference range for a newborn's resting respiratory rate and indicates bradypnea.", "The expected reference range for a newborn's resting respiratory rate is 30 to 60/min.", "This rate is above the expected reference range for a newborn's resting respiratory rate and indicates tachypnea.", "This rate is above the expected reference range for a newborn's resting respiratory rate and indicates tachypnea."]);
+  mc("ek_resp", "A nurse is caring for a client who is 16 -hr postpartum and states \"My baby has been breathing funny, fast and slow, off and on.\" Which of the following responses should the nurse provide?",
+    ["\"Most new mothers feel somewhat anxious about things like this.\"", "\"There's nothing for you to worry about. Newborns often breathe this way.\"", "\"Why do you think there is something wrong with that?\"", "\"Let's sit here together and observe your baby while you feed him.\""], 3,
+    ["With this response, the nurse is using the nontherapeutic communication technique of passing judgment about the client's feelings. It discourages the client from making further comments.", "With this response, the nurse is using the nontherapeutic communication technique of offering false reassurance. It does not encourage the client to express her concerns.", "With this response, the nurse is using the nontherapeutic communication technique of challenging the client for an explanation. It ends further statements of client concern.", "With this response, the nurse is using the therapeutic communication techniques of focusing and physical attending."]);
+  mc("ek_resp", "A nurse is caring for a client who has just delivered a newborn. The nurse notes secretions bubbling out of the newborn's nose and mouth. Which of the following actions is the nurse's priority?",
+    ["Suction the nose with a bulb syringe.", "Suction the mouth with a bulb syringe.", "Use a suction catheter with low negative pressure.", "Turn the newborn on his side."], 1,
+    ["Suctioning the secretions from the nose is important, but it is not the first action the nurse should take. Touching the nares with the tip of the bulb syringe might make the newborn gasp and inhale secretions from the mouth.", "The greatest risk to the newborn is aspiration of secretions. Removing the secretions from the mouth first is the priority action.", "It might become necessary to remove secretions that interfere with respiratory effort using a mechanical suction system, but this is not the first action the nurse should take.", "Positioning a newborn with excessive secretions on the side with a rolled blanket supporting the back is important to help prevent aspiration, but it is not the first action the nurse should take."]);
+  mc("ek_resp", "A nurse is caring for a term macrosomic newborn whose mother has poorly controlled type 2 diabetes. The newborn has respiratory distress syndrome. The nurse should be aware that the most likely cause of the respiratory distress is which of the following?",
+    ["Hyperinsulinemia", "Increased deposits of fat in the chest and shoulder area", "Brachial plexus injury", "Increased blood viscosity"], 0,
+    ["High levels of maternal glucose increase the production of fetal insulin. High fetal insulin levels interfere with the production of surfactant.", "Increased fat deposits in the chest and shoulder area increase the risk of shoulder dystocia at delivery.", "A brachial plexus injury causes the arm to hang limply at the newborn's side. It is typically the result of a difficulty delivery.", "Increased blood viscosity is due to polycythemia, which increases the risk of developing hyperbilirubinemia."]);
+  mc("ek_resp", "A nurse is preparing to administer oxygen via hood therapy to a newborn who was born at 30 weeks of gestation. Which of the following is an appropriate nursing action when providing care to this infant?",
+    ["Remove the hood every hour for 10 min to facilitate bonding.", "Insert an orogastric tube for decompression of the stomach.", "Place the newborn in Trendelenburg position.", "Maintain oxygen saturations between 93% to 95%."], 3,
+    ["Supplemental oxygen must be provided if the hood is removed to minimize significant fluctuations in oxygenation.", "Insertion of an orogastric tube is indicated with the use of continuous positive airway pressure therapy.", "Trendelenburg position should be avoided because it increases intracranial pressure and reduces lung capacity.", "Rates of retinopathy of prematurity and bronchopulmonary dysplasia in preterm newborns are reduced if oxygen saturations are maintained between 93% and 95%."]);
+  sata("ek_resp", "Select signs of respiratory distress in a newborn.",
+    ["Nasal flaring", "Expiratory grunting", "Chest retractions", "Respiratory rate of 40", "Cyanosis and tachypnea over 60"], [0, 1, 2, 4],
+    ["Flaring widens the airway to improve intake.", "Grunting keeps alveoli from collapsing.", "Retractions show increased work of breathing.", "The normal newborn rate is 30-60.", "These signal hypoxemia and distress."]);
+  mc("ek_resp", "Why does a newborn with RDS grunt?",
+    ["To keep the alveoli open by partially closing the glottis", "Because of a mucus plug", "It is a normal sound", "From pain"], 0,
+    ["This creates back-pressure that holds alveoli open.", "Mucus causes gurgling, not grunting.", "Grunting is never normal.", "Pain causes a high-pitched cry."]);
+  mc("ek_resp", "What causes respiratory distress syndrome in a premature newborn?",
+    ["Insufficient surfactant, leading to alveolar collapse", "Excess surfactant", "Fluid overload", "Infection only"], 0,
+    ["Surfactant lowers surface tension; without it alveoli collapse.", "This is the opposite of the problem.", "This is not the cause of RDS.", "Sepsis can cause distress, but RDS is surfactant deficiency."]);
+  mc("ek_resp", "How is synthetic surfactant (Infasurf, Curasurf) given?",
+    ["Through the endotracheal tube", "Intravenously", "Intramuscularly", "By nasal cannula"], 0,
+    ["It is instilled directly into the airway.", "It would not reach the alveoli.", "It would not reach the alveoli.", "This delivers oxygen, not surfactant."]);
+  mc("ek_resp", "A newborn has grunting, retractions, and a respiratory rate of 78. What should the nurse do first?",
+    ["Maintain the airway, apply pulse oximetry, and notify the provider", "Offer glucose water", "Obtain a weight", "Give a bath"], 0,
+    ["Airway and oxygenation come first.", "Oral feeding risks aspiration during distress.", "This is not the priority.", "This causes cold stress."]);
+  mc("ek_resp", "Which finding in a newborn needs immediate action?",
+    ["Central cyanosis (blue lips and trunk)", "Acrocyanosis at 6 hours", "Milia on the nose", "Mongolian spot"], 0,
+    ["It indicates hypoxemia and needs immediate intervention.", "This is normal for 24-48 hours.", "This is a benign finding.", "This is benign pigmentation."]);
+
+  /* ---------- ek_nas ---------- */
+  sata("ek_nas", "Select substances that can cause neonatal abstinence syndrome.",
+    ["Opioids", "Alcohol", "Benzodiazepines", "Prenatal vitamins", "Folic acid"], [0, 1, 2],
+    ["Opioids are the classic cause.", "Alcohol exposure can cause withdrawal.", "Benzodiazepines can cause withdrawal.", "Vitamins do not cause withdrawal.", "Folic acid does not cause withdrawal."]);
+  sata("ek_nas", "Select signs of neonatal abstinence syndrome.",
+    ["High-pitched cry", "Tremors", "Poor feeding", "Sleeping soundly for 4 hours after feeds", "Vomiting and diarrhea"], [0, 1, 2, 4],
+    ["This is a classic CNS sign.", "This is CNS irritability.", "Poor suck and feeding are common.", "Babies with NAS sleep poorly.", "These are GI signs."]);
+  sata("ek_nas", "Select nursing interventions for a newborn with NAS.",
+    ["Swaddle snugly", "Dim lights and reduce noise", "Frequent small high-calorie feedings", "Provide a bright, stimulating environment", "Withhold feedings"], [0, 1, 2],
+    ["Swaddling calms irritability.", "Low stimulation reduces agitation.", "These meet high caloric needs.", "This worsens irritability.", "The baby needs calories and hydration."]);
+  mc("ek_nas", "A newborn's NAS score is 8 or higher on two consecutive assessments. What does this mean?",
+    ["Pharmacologic treatment, such as morphine or methadone, is started per provider", "The baby can be discharged", "Assessments can stop", "Routine care continues"], 0,
+    ["Medication is started and tapered slowly.", "Discharge waits until symptoms are controlled.", "Scoring continues to track response.", "This score calls for treatment."]);
+  mc("ek_nas", "Which tool is used to assess a newborn for withdrawal?",
+    ["Neonatal abstinence scoring (Finnegan)", "Apgar score", "Ballard score", "Braden scale"], 0,
+    ["It scores withdrawal signs after feedings.", "This measures transition at birth.", "This estimates gestational age.", "This assesses pressure injury risk."]);
+  mc("ek_nas", "A newborn with NAS has frequent loose stools and vomiting. What is the priority?",
+    ["Monitor hydration, weight, and electrolytes", "Increase stimulation", "Stop all feeds and medication", "Give larger feeds"], 0,
+    ["Dehydration and weight loss are the main risks.", "This worsens irritability.", "The baby needs nutrition and treatment.", "This worsens vomiting."]);
+
+  /* ---------- ek_assess ---------- */
+  mc("ek_assess", "A nurse is caring for a new mother who is concerned that her newborn's eyes cross. Which of the following statements is a therapeutic response by the nurse?",
+    ["\"I will call your primary care provider to report your concerns.\"", "\"I will take your baby to the nursery for further examination.\"", "\"This occurs because newborns lack muscle control to regulate eye movement.\"", "\"This is a concern, but strabismus is easily treated with patching.\""], 2,
+    ["This is an inappropriate response by the nurse because it does not address the client's feelings of concern.", "It is not necessary for the nurse to complete additional examination of the newborn. This also does not address the client's concerns.", "This addresses the client's concerns because it provides information that addresses her concerns. The eyes of newborns are structurally incomplete and muscle control is not fully developed for 3 months.", "This is an inappropriate statement by the nurse because it offers unwarranted reassurance. The nurse is making an assumption that that should be addressed by the provider."]);
+  mc("ek_assess", "A nurse is assessing a newborn who was born at 42.5 weeks of gestation. Which of the following findings should the nurse expect?",
+    ["Copious vernix", "Scant scalp hair", "Increased subcutaneous fat", "Dry, cracked skin"], 3,
+    ["A newborn who is postmature lacks vernix.", "A newborn who is postmature commonly has profuse scalp hair.", "A newborn who is postmature lacks subcutaneous fat.", "A newborn who is postmature has dry, cracked skin."]);
+  mc("ek_assess", "A nurse is completing the admission assessment of a newborn. Which of the following anatomical landmarks should the nurse use when measuring the newborn's chest circumference?",
+    ["Sternal notch", "Nipple line", "Xiphoid process", "Fifth intercostal space"], 1,
+    ["Using this landmark can result in an incorrect measurement of chest circumference.", "The nurse should measure the newborn's chest circumference at the nipple line.", "Using this landmark can result in an incorrect measurement of chest circumference.", "Using this landmark can result in an incorrect measurement of chest circumference."]);
+  mc("ek_assess", "A nurse is caring for a newborn delivered by vaginal birth with a vacuum assist. The newborn's mother asks about the swollen area on her son's head. After palpation to identify that the swelling crosses the suture line, which of the following is an appropriate response by the nurse?",
+    ["\"Mongolian spots can be found on the skin of many newborns.\"", "\"A caput succedaneum occurs due to compression of blood vessels.\"", "\"This is a cephalhematoma, which can occur spontaneously.\"", "\"This is erythema toxicum, which is a transient condition.\""], 1,
+    ["Mongolian spots are bluish-black areas of pigmentation more commonly noted on the back and buttocks.", "A caput succedaneum is an area of edema on the newborn's occiput, often seen where the cup of the vacuum was applied. It is present at birth and will disappear within 3 to 4 days.", "A cephalohematoma is a collection of blood between the skull and periosteum and does not cross the suture line. It appears after the birth and will take 3 to 6 weeks to resolve.", "Erythema toxicum is a transient skin rash that can occur during the first 3 weeks of life. It is thought to be an inflammatory response and no treatment is required."]);
+  mc("ek_assess", "A nurse is assessing a newborn the day after delivery. The nurse notes a raised, bruised area on the left side of the scalp that does not cross the suture line. How should the nurse document this finding?",
+    ["Caput succedaneum", "Cephalhematoma", "Molding", "Pilonidal dimple"], 1,
+    ["Caput succedaneum is edema of the presenting part of the newborn's head due to pressure during labor. The edema extends across the suture lines of the skull.", "A cephalhematoma is a swelling, indicating bleeding under the subcutaneous tissues of the newborn's scalp. The collection of blood is beneath the periosteum of the cranial bone and therefore does not cross the suture line.", "Molding is a temporary misshaping of the fetal head due to overlapping cranial bones at the suture lines to accommodate the passage of the fetal head through the birth canal.", "Pilonidal dimple can be observed when assessing the vertebral column and can be associated with spina bifida."]);
+  mc("ek_assess", "A nurse is completing a newborn gestational age assessment. Which of the following findings should be recorded as part of this assessment on the newborn?",
+    ["Acrocyanosis of hands and feet", "Anterior fontanel soft and level", "Plantar creases cover 2/3 of sole", "Vernix caseosa in inguinal creases"], 2,
+    ["Acrocyanosis is monitored as part of the Apgar and newborn physical assessment but is not a component of gestational age assessment.", "The anterior fontanel is palpated as part of newborn physical assessment but is not a component of gestational age assessment.", "Observing the presence of creases on the plantar surface is one of the components of a gestational age assessment.", "Vernix caseosa in inguinal creases is a normal newborn finding but not a component of gestational age assessment."]);
+  mc("ek_assess", "A nurse is assessing a newborn who has developmental dysplasia of the hip (DDH). Which of the following findings should the nurse expect?",
+    ["Absent plantar reflexes", "Lengthened thigh on the affected side", "Inwardly turned foot on the affected side", "Asymmetric thigh folds"], 3,
+    ["Absence of any newborn reflexes indicate a neurological problem, not a musculoskeletal one.", "With DDH, the thigh on the affected side is shorter than the thigh on the unaffected side. This is known as Galeazzi sign.", "A foot that turns inward can be the result of fetal positioning or due to a congenital condition known as talipes equinovarus or club foot.", "Gluteal and thigh skin folds that are not equal and symmetric is a sign of DDH."]);
+  mc("ek_assess", "A nurse is caring for a newborn who has myelomeningocele. Which of the following nursing goals has the priority in the care of this infant?",
+    ["Maintain the integrity of the sac.", "Promote maternal-infant bonding.", "Educate the parents about the defect.", "Provide age-appropriate stimulation."], 0,
+    ["Myelomeningocele is a congenital disorder that causes the spine and spinal canal to not close prior to birth, which results in the spinal cord, meninges, and nerve roots protruding out of the child's back in a fluid-filled sac. Before surgery, the infant must be handled carefully to reduce damage to the exposed spinal cord and to maintain the integrity of the sac.", "Although promoting maternal-infant bonding is important, there is a higher priority during the preoperative phase of care.", "Although parental education is important, there is a higher priority during the preoperative phase of care.", "Although providing age-appropriate stimulation is important, there is a higher priority during the preoperative phase of care."]);
+  mc("ek_assess", "A nurse is planning care for a newborn who has spinal bifida. Which of the following actions should be included in the plan of care?",
+    ["Obtain rectal temperatures.", "Place the newborn in the prone position.", "Cover the lesion with a dry dressing.", "Apply snug, clean diapers."], 1,
+    ["Obtaining rectal temperatures can cause rectal irritation and prolapse and should be avoided.", "Placing the newborn in the prone position prevents trauma to the lesion. The newborn's knees should be assessed for evidence of skin breakdown.", "The lesion should be covered with a sterile, moist, nonadherent dressing to prevent drying and to reduce the risk of infection.", "Diapering should be avoided to prevent urine and stool contamination of the lesion. Absorbent pads should be placed under the diaper area and changed frequently to keep the area dry and free of skin irritation."]);
+  mc("ek_assess", "A nurse is assessing a newborn following a vacuum-assisted delivery. Which of the following findings should the nurse report to the provider?",
+    ["Poor sucking", "Blue coloring of the hands and feet", "Soft, edematous area on the scalp", "Facial edema"], 0,
+    ["Vacuum-assisted birth involves attaching a vacuum cup to the fetal head and using negative pressure to assist in the birth of the head, placing the newborn at risk for a subdural hematoma. The nurse should report manifestations of cerebral irritation, such as listlessness and poor sucking to the provider.", "Acrocyanosis, or blue coloring in the hands and feet, is an expected finding in newborns and does not need to be reported to the provider.", "Caput succedaneum, or a soft-tissue hematoma, is an expected finding with vacuum extraction. The pressure from the suction forms an accumulation of fluid in the soft tissue. This is considered benign and generally disappears in 3 to 5 days. This finding does not need to be reported to the provider.", "Facial edema is an expected finding in newborns and can persist up to 24 hr. It does not need to be reported to the provider."]);
+  mc("ek_assess", "A nurse in the newborn nursery is caring for a group of newborns. Which of the following newborns requires immediate intervention?",
+    ["A newborn who is 24 hr post-delivery and has not voided", "A newborn who is 18 hr post-delivery and has acrocyanosis", "A newborn who is 24-hr post-delivery and has not passed meconium", "A newborn who is 12 hr post-delivery and has a temperature of 37.5¡ C (99.5¡ F)"], 3,
+    ["First voiding usually occurs within 24 to 48 hr following delivery.", "Acrocyanosis, a bluish discoloration of the hands and feet, can persist for 24 hr following delivery.", "Passage of meconium usually occurs within 12 to 48 hr post-delivery.", "Hyperthermia in the newborn requires immediately intervention. Hyperthermia is typically caused by increased heat production related to sepsis or decreased heat loss."]);
+  mc("ek_assess", "A nurse is admitting a term newborn following a cesarean birth. The nurse observes that the newborn's skin is slightly yellow. This finding indicates the newborn is experiencing a complication related to which of the following?",
+    ["Maternal/newborn blood group incompatibility", "Absence of vitamin K", "Physiologic jaundice", "Maternal cocaine abuse"], 0,
+    ["Maternal/newborn blood group incompatibility is the most common form of pathologic jaundice and the jaundice appears within the first 24 hr of life.", "The absence of vitamin K results in increased bleeding and hemorrhagic disease of the newborn.", "Physiologic jaundice in the term newborn appears after 24 hr.", "The newborn exposed to maternal cocaine abuse is often small for gestational age, exhibits tremors, irritability, hyperactivity to stimuli, and poor feeding."]);
+  mc("ek_assess", "What does the Ortolani maneuver detect?",
+    ["A dislocated hip that reduces with a palpable click or clunk (DDH)", "A fractured clavicle", "Spina bifida", "Hypospadias"], 0,
+    ["Ortolani relocates a dislocated hip; Barlow tests whether a hip can be dislocated.", "The clavicle is checked by palpation.", "The spine is inspected and palpated.", "The urethral opening is inspected."]);
+  mc("ek_assess", "The nurse sees a tuft of hair and a dimple over the newborn's sacrum. What should the nurse do?",
+    ["Notify the provider; it may indicate spina bifida occulta", "Document as normal", "Treat as a Mongolian spot", "Reassure the parents it is caput"], 0,
+    ["Skin markings over the spine can signal a hidden defect.", "These markings are not routine.", "Mongolian spots are flat blue-gray areas.", "Caput is scalp swelling."]);
+  mc("ek_assess", "Which neck finding in a newborn is abnormal?",
+    ["Limited rotation to one side with a palpable mass", "A short neck with skin creases", "Head lag", "Symmetric movement"], 0,
+    ["This suggests torticollis.", "This is normal.", "Head lag is normal in newborns.", "This is a normal finding."]);
+  sata("ek_assess", "Select normal newborn findings.",
+    ["Acrocyanosis in the first 24 hours", "Milia", "Mongolian spots", "Central cyanosis", "Resting heart rate of 120-160"], [0, 1, 2, 4],
+    ["Peripheral blue color is normal early.", "Milia are benign white bumps.", "These are benign pigmented patches.", "Central cyanosis is never normal.", "This is the normal resting rate."]);
+  sata("ek_assess", "Select findings that need provider notification.",
+    ["Grunting with retractions", "Jaundice in the first 24 hours", "Milia on the nose", "Acrocyanosis at 6 hours", "Jitteriness with glucose of 35 mg/dL"], [0, 1, 4],
+    ["This is respiratory distress.", "This suggests pathologic jaundice.", "Milia are normal.", "Acrocyanosis is normal early.", "This is hypoglycemia."]);
+
+  /* ---------- ek_sleep ---------- */
+  mc("ek_sleep", "Which newborn state is best for breastfeeding and bonding?",
+    ["Quiet alert or drowsy", "Deep sleep", "Active crying", "Light sleep"], 0,
+    ["The baby is receptive and can latch well.", "The baby is hard to rouse and feeds poorly.", "This is a late hunger cue and makes latching hard.", "The baby is less ready than in a quiet alert state."]);
+  mc("ek_sleep", "Which describes active (light) sleep in a newborn?",
+    ["Irregular breathing, twitching, and rapid eye movements", "Regular breathing with no movement", "Wide-eyed and looking around", "Crying"], 0,
+    ["This is typical of active sleep.", "This is deep sleep.", "This is the quiet alert state.", "This is the crying state."]);
+  mc("ek_sleep", "A newborn lies still with regular breathing and does not respond to noise. Which state is this?",
+    ["Quiet (deep) sleep", "Active sleep", "Active alert", "Crying"], 0,
+    ["Breathing is regular and the baby is hard to rouse.", "This has movement and irregular breathing.", "The baby would be awake and fussy.", "The baby would be crying."]);
+  mc("ek_sleep", "Which sequence of newborn behavior after birth is correct?",
+    ["Alert and active, then a sleep period, then a second period of reactivity", "Sleep first, then crying", "Deep sleep for 24 hours", "Second period of reactivity before the first"], 0,
+    ["The first reactivity period is followed by sleep, then a second alert period.", "The baby is alert first.", "This is not the normal pattern.", "The order is reversed."]);
+  mc("ek_sleep", "Which is a late hunger cue?",
+    ["Crying", "Rooting", "Hand to mouth", "Lip smacking"], 0,
+    ["Crying is a late cue and makes latching difficult.", "This is an early cue.", "This is an early cue.", "This is an early cue."]);
+
+  window.QUESTIONS = Q;
+})();
+
+</script>
+  <script>
+(function () {
+  "use strict";
+
+  var BANK = window.QUESTIONS || [];
+  var TOPICS = window.TOPICS || [];
+  var CHAPTERS = window.CHAPTERS || {};
+  var STORE_KEY = "nur270a-exam3-progress-v3";
+  var SECONDS_PER_QUESTION = 90;
+  var STRIP_MAX = 40;
+
+  var app = document.getElementById("app");
+  var byId = {};
+  BANK.forEach(function (q) { byId[q.id] = q; });
+  var topicById = {};
+  TOPICS.forEach(function (t) { topicById[t.id] = t; });
+
+  /* ---------- helpers ---------- */
+  function whyHtml(q) {
+    if (!Array.isArray(q.why)) return "<p>" + esc(q.why) + "</p>";
+    var ok = q.type === "sata" ? q.a : [q.a];
+    var s = '<ul class="ow">';
+    q.opts.forEach(function (o, j) {
+      var right = ok.indexOf(j) !== -1;
+      s += '<li class="' + (right ? "yes" : "no") + '"><strong>' + String.fromCharCode(65 + j) + ". " + esc(o) + "</strong> (" + (right ? "correct" : "incorrect") + "): " + esc(q.why[j]) + "</li>";
+    });
+    return s + "</ul>";
+  }
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  function shuffle(a) {
+    var r = a.slice();
+    for (var i = r.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = r[i]; r[i] = r[j]; r[j] = t;
+    }
+    return r;
+  }
+  function range(n) { var r = []; for (var i = 0; i < n; i++) r.push(i); return r; }
+  function norm(s) {
+    return String(s).toLowerCase().replace(/[\u2013\u2014]/g, "-").replace(/\s*-\s*/g, "-").replace(/\s+/g, " ").replace(/\.$/, "").trim();
+  }
+  function fmtTime(sec) {
+    sec = Math.max(0, sec);
+    var m = Math.floor(sec / 60), s = sec % 60;
+    return m + ":" + (s < 10 ? "0" : "") + s;
+  }
+
+  /* ---------- progress storage ---------- */
+  function loadProgress() {
+    try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); } catch (e) { return {}; }
+  }
+  var progress = loadProgress();
+  function saveProgress() {
+    try { localStorage.setItem(STORE_KEY, JSON.stringify(progress)); } catch (e) { /* storage unavailable */ }
+  }
+  function rec(id) {
+    if (!progress[id]) progress[id] = { seen: 0, right: 0, last: null, flag: false };
+    return progress[id];
+  }
+
+  /* ---------- question logic ---------- */
+  function evaluate(item) {
+    var q = item.q, r = item.resp;
+    if (q.type === "mc") return r === q.a;
+    if (q.type === "sata") {
+      if (!r || r.length !== q.a.length) return false;
+      return q.a.every(function (i) { return r.indexOf(i) !== -1; });
+    }
+    if (q.type === "fill") {
+      var v = norm(r || "");
+      return v !== "" && q.a.some(function (x) { return norm(x) === v; });
+    }
+    if (q.type === "order") return r.every(function (v, i) { return v === i; });
+    return false;
+  }
+  function isAnswered(item) {
+    var q = item.q, r = item.resp;
+    if (q.type === "mc") return r !== null;
+    if (q.type === "sata") return r.length > 0;
+    if (q.type === "fill") return String(r).trim() !== "";
+    return !!item.touched;
+  }
+  function makeItem(q) {
+    var item = { q: q, checked: false, correct: null, flagged: !!(progress[q.id] && progress[q.id].flag), recorded: false };
+    if (q.type === "mc") { item.resp = null; item.shown = shuffle(range(q.opts.length)); }
+    else if (q.type === "sata") { item.resp = []; item.shown = shuffle(range(q.opts.length)); }
+    else if (q.type === "fill") { item.resp = ""; }
+    else {
+      var p = shuffle(range(q.opts.length));
+      var same = p.every(function (v, i) { return v === i; });
+      if (same) p.push(p.shift());
+      item.resp = p;
+    }
+    return item;
+  }
+  function correctText(q) {
+    if (q.type === "mc") return q.opts[q.a];
+    if (q.type === "sata") return q.a.map(function (i) { return q.opts[i]; }).join("; ");
+    if (q.type === "fill") return q.a[0];
+    return q.opts.map(function (t, i) { return (i + 1) + ". " + t; }).join(" ");
+  }
+  function respText(item) {
+    var q = item.q, r = item.resp;
+    if (q.type === "mc") return r === null ? "No answer" : q.opts[r];
+    if (q.type === "sata") return r.length ? r.slice().sort(function (a, b) { return a - b; }).map(function (i) { return q.opts[i]; }).join("; ") : "No answer";
+    if (q.type === "fill") return String(r).trim() === "" ? "No answer" : r;
+    return r.map(function (i, n) { return (n + 1) + ". " + q.opts[i]; }).join(" ");
+  }
+  function record(item) {
+    if (item.recorded) return;
+    item.recorded = true;
+    var p = rec(item.q.id);
+    p.seen += 1;
+    if (item.correct) p.right += 1;
+    p.last = !!item.correct;
+  }
+
+  /* ---------- stats ---------- */
+  function topicStats() {
+    var out = {};
+    TOPICS.forEach(function (t) { out[t.id] = { total: 0, seen: 0, seenAttempts: 0, right: 0 }; });
+    BANK.forEach(function (q) {
+      var s = out[q.topic]; if (!s) return;
+      s.total += 1;
+      var p = progress[q.id];
+      if (p && p.seen) { s.seen += 1; s.seenAttempts += p.seen; s.right += p.right; }
+    });
+    return out;
+  }
+  function counts() {
+    var missed = 0, flagged = 0;
+    BANK.forEach(function (q) {
+      var p = progress[q.id];
+      if (p && p.last === false) missed++;
+      if (p && p.flag) flagged++;
+    });
+    return { missed: missed, flagged: flagged };
+  }
+
+  /* ---------- session state ---------- */
+  var S = null;
+  var timerId = null;
+  function stopTimer() { if (timerId) { clearInterval(timerId); timerId = null; } }
+
+  /* ---------- HOME ---------- */
+  function renderHome() {
+    stopTimer();
+    S = null;
+    var stats = topicStats();
+    var c = counts();
+    var h = "";
+    h += "<h2>Practice for Exam 3</h2>";
+    h += '<p class="lede">' + BANK.length + " questions on the topics your professor emphasized, each with a rationale for every answer choice. Pick a mode, choose topics, and start. Your progress is saved in this browser.</p>";
+
+    h += '<form id="setup" class="panel" aria-label="Session setup">';
+    h += "<fieldset><legend>Mode</legend><div class=\"modes\">";
+    h += modeCard("study", "Study", "Answer one at a time and see the rationale right away.", true);
+    h += modeCard("exam", "Exam", "Timed, no feedback until you submit. Scored out of 100.", false);
+    h += modeCard("marathon", "Marathon", "Every question in your scope, with feedback. Stop whenever you like.", false);
+    h += "</div></fieldset>";
+
+    h += '<h3>Topics</h3>';
+    Object.keys(CHAPTERS).forEach(function (ch) {
+      h += '<div class="chapter"><label class="chapter-head"><input type="checkbox" data-chapter="' + ch + '" checked> ' + esc(CHAPTERS[ch]) + "</label><div class=\"topics\">";
+      TOPICS.filter(function (t) { return t.chapter === ch; }).forEach(function (t) {
+        var n = stats[t.id].total;
+        h += '<label class="chip"><input type="checkbox" name="topic" value="' + t.id + '" checked> ' + esc(t.label) + " <em>" + n + "</em></label>";
+      });
+      h += "</div></div>";
+    });
+
+    h += '<div class="row">';
+    h += '<label>Questions <select name="count"><option value="10">10</option><option value="20" selected>20</option><option value="30">30</option><option value="50">50</option><option value="all">All</option></select></label>';
+    h += '<label>Include <select name="filter"><option value="all">All questions</option><option value="unseen">Not yet answered</option><option value="missed">Missed last time (' + c.missed + ')</option><option value="flagged">Flagged (' + c.flagged + ')</option></select></label>';
+    h += "</div>";
+    h += '<div class="actions"><button class="btn" type="submit">Start</button><span id="setupMsg" role="status" class="empty"></span></div>';
+    h += "</form>";
+
+    h += '<section class="panel" aria-labelledby="progTitle"><h3 id="progTitle">Your progress by topic</h3><div class="bars">';
+    TOPICS.forEach(function (t) {
+      var s = stats[t.id];
+      var acc = s.seenAttempts ? Math.round((s.right / s.seenAttempts) * 100) : null;
+      var cls = acc === null ? "" : acc >= 80 ? "hi" : acc >= 60 ? "mid" : "low";
+      var cover = s.total ? Math.round((s.seen / s.total) * 100) : 0;
+      h += '<div class="bar-row"><span>' + esc(t.label) + '</span><div class="bar" role="img" aria-label="' + cover + ' percent of questions attempted"><i class="' + cls + '" style="width:' + cover + '%"></i></div><span class="num">' +
+        s.seen + "/" + s.total + (acc === null ? "" : " &middot; " + acc + "% correct") + "</span></div>";
+    });
+    h += '</div><p class="hint">Bar length shows how many questions you have tried. Color shows accuracy: green 80% or higher, amber 60-79%, red below 60%.</p>';
+    h += '<div class="actions"><button class="linkbtn" id="resetBtn" type="button">Reset saved progress</button></div></section>';
+
+    app.innerHTML = h;
+    document.getElementById("setup").addEventListener("submit", onStart);
+    document.getElementById("setup").addEventListener("change", onSetupChange);
+    document.getElementById("resetBtn").addEventListener("click", function () {
+      if (window.confirm("Clear all saved answers, accuracy, and flags?")) {
+        progress = {}; saveProgress(); renderHome();
+      }
+    });
+  }
+  function modeCard(id, title, desc, checked) {
+    return '<label class="mode"><input type="radio" name="mode" value="' + id + '"' + (checked ? " checked" : "") + "><strong>" + title + "</strong><span>" + desc + "</span></label>";
+  }
+  function onSetupChange(e) {
+    var t = e.target;
+    if (t.dataset && t.dataset.chapter) {
+      var ch = t.dataset.chapter;
+      TOPICS.filter(function (x) { return x.chapter === ch; }).forEach(function (x) {
+        var box = document.querySelector('input[name="topic"][value="' + x.id + '"]');
+        if (box) box.checked = t.checked;
+      });
+    }
+    if (t.name === "topic") {
+      Object.keys(CHAPTERS).forEach(function (ch) {
+        var ids = TOPICS.filter(function (x) { return x.chapter === ch; }).map(function (x) { return x.id; });
+        var all = ids.every(function (id) { return document.querySelector('input[name="topic"][value="' + id + '"]').checked; });
+        document.querySelector('input[data-chapter="' + ch + '"]').checked = all;
+      });
+    }
+  }
+  function onStart(e) {
+    e.preventDefault();
+    var f = e.target;
+    var topics = Array.prototype.slice.call(f.querySelectorAll('input[name="topic"]:checked')).map(function (x) { return x.value; });
+    var mode = f.querySelector('input[name="mode"]:checked').value;
+    var count = f.elements.count.value;
+    var filter = f.elements.filter.value;
+    var msg = document.getElementById("setupMsg");
+    if (!topics.length) { msg.textContent = "Choose at least one topic."; return; }
+    var pool = BANK.filter(function (q) {
+      if (topics.indexOf(q.topic) === -1) return false;
+      var p = progress[q.id];
+      if (filter === "unseen") return !p || !p.seen;
+      if (filter === "missed") return p && p.last === false;
+      if (filter === "flagged") return p && p.flag;
+      return true;
+    });
+    if (!pool.length) { msg.textContent = "No questions match those choices. Try a different filter or topic."; return; }
+    startSession(mode, pool, count);
+  }
+
+  /* ---------- SESSION ---------- */
+  function startSession(mode, pool, count) {
+    var qs = shuffle(pool);
+    if (mode !== "marathon" && count !== "all") qs = qs.slice(0, parseInt(count, 10));
+    S = {
+      mode: mode,
+      items: qs.map(makeItem),
+      i: 0,
+      started: Date.now(),
+      limit: mode === "exam" ? qs.length * SECONDS_PER_QUESTION : 0,
+      finished: false
+    };
+    renderQuiz();
+    if (S.limit) {
+      stopTimer();
+      timerId = setInterval(tick, 1000);
+    }
+    window.scrollTo(0, 0);
+  }
+  function remaining() { return S.limit - Math.floor((Date.now() - S.started) / 1000); }
+  function tick() {
+    if (!S || S.finished) { stopTimer(); return; }
+    var left = remaining();
+    var el = document.getElementById("timer");
+    if (el) { el.textContent = fmtTime(left); el.classList.toggle("low", left <= 60); }
+    if (left <= 0) { finish(true); }
+  }
+
+  function stripHtml() {
+    var n = S.items.length;
+    if (n > STRIP_MAX) {
+      var done = S.items.filter(function (it) { return S.mode === "exam" ? isAnswered(it) : it.checked; }).length;
+      return '<div class="plainbar" role="progressbar" aria-valuemin="0" aria-valuemax="' + n + '" aria-valuenow="' + done + '" aria-label="Questions answered"><i style="width:' + Math.round((done / n) * 100) + '%"></i></div>';
+    }
+    var h = '<div class="strip" role="group" aria-label="Question progress">';
+    S.items.forEach(function (it, idx) {
+      var cls = "beat";
+      if (S.mode !== "exam" && it.checked) cls += it.correct ? " right" : " wrong";
+      else if (S.mode === "exam" && isAnswered(it)) cls += " seen";
+      if (it.flagged) cls += " flagged";
+      if (idx === S.i) cls += " current";
+      var label = "Question " + (idx + 1) + (it.flagged ? ", flagged" : "") + (idx === S.i ? ", current" : "");
+      h += '<button type="button" class="' + cls + '" data-go="' + idx + '" aria-label="' + label + '"><svg viewBox="0 0 28 30" aria-hidden="true"><path d="M0 20 H8 L10 17 L12 20 H14 L16 4 L19 26 L21 20 H24 L26 18 L28 20"/></svg></button>';
+    });
+    return h + "</div>";
+  }
+  function bindStrip() {
+    document.querySelectorAll("[data-go]").forEach(function (b) {
+      b.addEventListener("click", function () { S.i = parseInt(b.dataset.go, 10); renderQuiz(); window.scrollTo(0, 0); });
+    });
+  }
+  function refreshStrip() {
+    var el = document.getElementById("stripHost");
+    if (el) { el.innerHTML = stripHtml(); bindStrip(); }
+  }
+
+  function renderQuiz(focusSel) {
+    var it = S.items[S.i], q = it.q;
+    var showFB = it.checked && S.mode !== "exam";
+    var h = '<div id="stripHost">' + stripHtml() + "</div>";
+    h += '<section class="panel' + (showFB ? " locked" : "") + '" aria-live="off">';
+    h += '<div class="meta"><span>Question ' + (S.i + 1) + " of " + S.items.length + '</span><span class="tag">' + esc(topicById[q.topic].label) + "</span>";
+    if (S.limit) h += '<span class="timer" id="timer" role="timer">' + fmtTime(remaining()) + "</span>";
+    h += "</div>";
+    h += '<p class="stem" id="stem">' + esc(q.q) + "</p>";
+    if (q.type === "sata") h += '<p class="hint">Select all that apply.</p>';
+    if (q.type === "order") h += '<p class="hint">Use the arrows to put the steps in the correct order, first at the top.</p>';
+
+    if (q.type === "mc" || q.type === "sata") h += optionsHtml(it, showFB);
+    else if (q.type === "fill") {
+      var cls = showFB ? (it.correct ? " right" : " wrong") : "";
+      h += '<input class="fill' + cls + '" id="fillBox" type="text" autocomplete="off" aria-labelledby="stem" value="' + esc(it.resp) + '"' + (showFB ? " disabled" : "") + ">";
+    } else h += orderHtml(it, showFB);
+
+    if (showFB) {
+      h += '<div class="feedback ' + (it.correct ? "right" : "wrong") + '" role="status"><strong>' + (it.correct ? "Correct" : "Not quite") + "</strong>";
+      if (!it.correct) h += "<p>Correct answer: " + esc(correctText(q)) + "</p>";
+      h += whyHtml(q) + '<p class="ref">Review: ' + esc(topicById[q.topic].ref) + " in your notes</p></div>";
+    }
+
+    h += '<div class="actions">';
+    h += '<button class="btn ghost" type="button" id="prevBtn"' + (S.i === 0 ? " disabled" : "") + ">Previous</button>";
+    if (S.mode !== "exam" && !it.checked) h += '<button class="btn" type="button" id="checkBtn"' + (isAnswered(it) ? "" : " disabled") + ">Check answer</button>";
+    else if (S.i < S.items.length - 1) h += '<button class="btn" type="button" id="nextBtn">Next question</button>';
+    else if (S.mode === "exam") h += '<button class="btn" type="button" id="finishBtn">Submit exam</button>';
+    else h += '<button class="btn" type="button" id="finishBtn">See results</button>';
+    h += '<button class="btn ghost" type="button" id="flagBtn" aria-pressed="' + it.flagged + '">' + (it.flagged ? "Unflag" : "Flag for review") + "</button>";
+    h += '<span class="spacer"></span>';
+    if (S.mode === "exam" && S.i < S.items.length - 1) h += '<button class="btn ghost" type="button" id="finishBtn">Submit exam</button>';
+    else if (S.mode !== "exam") h += '<button class="btn ghost" type="button" id="finishBtn2">End session</button>';
+    h += "</div></section>";
+
+    app.innerHTML = h;
+    bindQuiz();
+    if (focusSel) { var f = document.querySelector(focusSel); if (f) f.focus(); }
+  }
+
+  function optionsHtml(it, showFB) {
+    var q = it.q;
+    var h = '<ul class="opts" role="group" aria-labelledby="stem">';
+    it.shown.forEach(function (oi) {
+      var chosen = q.type === "mc" ? it.resp === oi : it.resp.indexOf(oi) !== -1;
+      var isRight = q.type === "mc" ? q.a === oi : q.a.indexOf(oi) !== -1;
+      var cls = "opt", mark = "";
+      if (showFB) {
+        if (chosen && isRight) { cls += " right"; mark = "Correct"; }
+        else if (chosen && !isRight) { cls += " wrong"; mark = "Incorrect"; }
+        else if (!chosen && isRight) { cls += " missed"; mark = "Correct answer"; }
+      }
+      var type = q.type === "mc" ? "radio" : "checkbox";
+      h += '<li><label class="' + cls + '"><input type="' + type + '" name="opt" value="' + oi + '"' + (chosen ? " checked" : "") + (showFB ? " disabled" : "") + "><span>" + esc(q.opts[oi]) + "</span>" + (mark ? '<span class="mark">' + mark + "</span>" : "") + "</label></li>";
+    });
+    return h + "</ul>";
+  }
+  function orderHtml(it, showFB) {
+    var q = it.q;
+    var h = '<ol class="seq">';
+    it.resp.forEach(function (oi, pos) {
+      var cls = "";
+      if (showFB) cls = oi === pos ? "right" : "wrong";
+      h += '<li class="' + cls + '"><span class="pos">' + (pos + 1) + '</span><span class="txt">' + esc(q.opts[oi]) + "</span>";
+      if (!showFB) {
+        h += '<button type="button" data-move="up" data-pos="' + pos + '" aria-label="Move up"' + (pos === 0 ? " disabled" : "") + ">&uarr;</button>";
+        h += '<button type="button" data-move="down" data-pos="' + pos + '" aria-label="Move down"' + (pos === it.resp.length - 1 ? " disabled" : "") + ">&darr;</button>";
+      }
+      h += "</li>";
+    });
+    return h + "</ol>";
+  }
+
+  function bindQuiz() {
+    var it = S.items[S.i], q = it.q;
+    var on = function (id, fn) { var el = document.getElementById(id); if (el) el.addEventListener("click", fn); };
+
+    bindStrip();
+    document.querySelectorAll('input[name="opt"]').forEach(function (inp) {
+      inp.addEventListener("change", function () {
+        var v = parseInt(inp.value, 10);
+        if (q.type === "mc") it.resp = v;
+        else {
+          var idx = it.resp.indexOf(v);
+          if (inp.checked && idx === -1) it.resp.push(v);
+          if (!inp.checked && idx !== -1) it.resp.splice(idx, 1);
+        }
+        afterAnswerChange();
+      });
+    });
+    var fb = document.getElementById("fillBox");
+    if (fb) {
+      fb.addEventListener("input", function () { it.resp = fb.value; afterAnswerChange(); });
+      fb.addEventListener("keydown", function (e) { if (e.key === "Enter" && S.mode !== "exam") { e.preventDefault(); doCheck(); } });
+    }
+    document.querySelectorAll("[data-move]").forEach(function (b) {
+      b.addEventListener("click", function () {
+        var pos = parseInt(b.dataset.pos, 10), to = b.dataset.move === "up" ? pos - 1 : pos + 1;
+        var t = it.resp[pos]; it.resp[pos] = it.resp[to]; it.resp[to] = t;
+        it.touched = true;
+        afterAnswerChange();
+        renderQuiz('[data-move="' + b.dataset.move + '"][data-pos="' + to + '"]');
+      });
+    });
+
+    on("prevBtn", function () { S.i -= 1; renderQuiz(); window.scrollTo(0, 0); });
+    on("nextBtn", function () { S.i += 1; renderQuiz(); window.scrollTo(0, 0); });
+    on("checkBtn", doCheck);
+    on("flagBtn", function () {
+      it.flagged = !it.flagged;
+      rec(q.id).flag = it.flagged;
+      saveProgress();
+      renderQuiz("#flagBtn");
+    });
+    on("finishBtn", function () { confirmFinish(); });
+    on("finishBtn2", function () { confirmFinish(); });
+  }
+  function afterAnswerChange() {
+    var it = S.items[S.i];
+    var btn = document.getElementById("checkBtn");
+    if (btn) btn.disabled = !isAnswered(it);
+    if (S.mode === "exam") refreshStrip();
+  }
+  function doCheck() {
+    var it = S.items[S.i];
+    if (!isAnswered(it) || it.checked) return;
+    it.checked = true;
+    it.correct = evaluate(it);
+    record(it);
+    saveProgress();
+    renderQuiz("#nextBtn, #finishBtn");
+    var fbEl = document.querySelector(".feedback");
+    if (fbEl && fbEl.scrollIntoView) fbEl.scrollIntoView({ block: "nearest" });
+  }
+  function confirmFinish() {
+    var unanswered = S.items.filter(function (x) { return S.mode === "exam" ? !isAnswered(x) : !x.checked; }).length;
+    var msg = S.mode === "exam"
+      ? (unanswered ? "You have " + unanswered + " unanswered question(s). Submit the exam anyway?" : "Submit the exam?")
+      : "End this session and see your results?";
+    if (window.confirm(msg)) finish(false);
+  }
+
+  /* ---------- RESULTS ---------- */
+  function finish(timedOut) {
+    stopTimer();
+    S.finished = true;
+    S.timedOut = !!timedOut;
+    S.elapsed = Math.floor((Date.now() - S.started) / 1000);
+    S.items.forEach(function (it) {
+      if (S.mode === "exam" && !it.checked) {
+        it.checked = true;
+        it.correct = isAnswered(it) ? evaluate(it) : false;
+        record(it);
+      }
+    });
+    saveProgress();
+    renderResults();
+    window.scrollTo(0, 0);
+  }
+  function renderResults() {
+    var counted = S.items.filter(function (it) { return it.checked; });
+    var right = counted.filter(function (it) { return it.correct; }).length;
+    var total = S.mode === "exam" ? S.items.length : counted.length;
+    var pct = total ? Math.round((right / total) * 100) : 0;
+    var h = "<h2>" + (S.mode === "exam" ? "Exam results" : "Session results") + "</h2>";
+    if (S.timedOut) h += '<p class="lede">Time ran out, so unanswered questions were scored as incorrect.</p>';
+    h += '<section class="panel"><div class="score"><span class="big">' + pct + '%</span><span>' + right + " of " + total + " correct" +
+      (S.mode === "exam" ? " &middot; " + Math.round((right / (total || 1)) * 100) + " / 100 points" : "") +
+      " &middot; " + fmtTime(S.elapsed) + "</span></div>";
+    if (!total) h += '<p class="empty">You ended the session before checking any answers.</p>';
+
+    var byTopic = {};
+    counted.forEach(function (it) {
+      var t = it.q.topic;
+      byTopic[t] = byTopic[t] || { n: 0, r: 0 };
+      byTopic[t].n += 1; if (it.correct) byTopic[t].r += 1;
+    });
+    var keys = Object.keys(byTopic);
+    if (keys.length) {
+      h += "<h3>By topic</h3><div class=\"bars\">";
+      keys.forEach(function (k) {
+        var s = byTopic[k], a = Math.round((s.r / s.n) * 100);
+        var cls = a >= 80 ? "hi" : a >= 60 ? "mid" : "low";
+        h += '<div class="bar-row"><span>' + esc(topicById[k].label) + '</span><div class="bar" role="img" aria-label="' + a + ' percent correct"><i class="' + cls + '" style="width:' + a + '%"></i></div><span class="num">' + s.r + "/" + s.n + " &middot; " + a + "%</span></div>";
+      });
+      h += "</div>";
+    }
+    var missed = counted.filter(function (it) { return !it.correct; });
+    h += '<div class="actions">';
+    if (missed.length) h += '<button class="btn" type="button" id="retryBtn">Retry ' + missed.length + " missed in Study mode</button>";
+    h += '<button class="btn ghost" type="button" id="homeBtn">Back to setup</button></div></section>';
+
+    h += "<h3>Review every question</h3><div class=\"review\">";
+    S.items.forEach(function (it, i) {
+      var q = it.q;
+      h += "<details" + (it.checked && !it.correct ? " open" : "") + "><summary><span class=\"" + (it.correct ? "ok" : "no") + '">' + (it.correct ? "Correct" : "Missed") + "</span><span>" + (i + 1) + ". " + esc(q.q) + "</span></summary><div class=\"body\">";
+      h += "<p><strong>Your answer:</strong> " + esc(it.checked || S.mode === "exam" ? respText(it) : "Not answered") + "</p>";
+      h += "<p><strong>Correct answer:</strong> " + esc(correctText(q)) + "</p>";
+      h += whyHtml(q) + '<p class="hint">Review: ' + esc(topicById[q.topic].ref) + "</p></div></details>";
+    });
+    h += "</div>";
+    app.innerHTML = h;
+
+    var rb = document.getElementById("retryBtn");
+    if (rb) rb.addEventListener("click", function () {
+      startSession("study", missed.map(function (it) { return it.q; }), "all");
+    });
+    document.getElementById("homeBtn").addEventListener("click", renderHome);
+  }
+
+  document.getElementById("homeLink").addEventListener("click", function () {
+    if (S && !S.finished && !window.confirm("Leave this session? Unchecked answers will be lost.")) return;
+    renderHome();
+  });
+
+  if (!BANK.length) {
+    app.innerHTML = '<p class="empty">The question bank did not load. Make sure data/questions.js is next to index.html.</p>';
+  } else {
+    renderHome();
+  }
+})();
+
+</script>
+</body>
+</html>
